@@ -1,0 +1,25 @@
+[ moleculetype ]
+; molname	nrexcl
+SOL		1
+
+[ atoms ]
+#ifdef _FF_AMBER94  
+;   nr   type  resnr residue  atom   cgnr     charge       mass
+     1	amber94_67   1	SOL     OW      1      -0.834    9.95200
+     2	amber94_66   1	SOL    HW1      1       0.417    4.03200
+     3	amber94_66   1	SOL    HW2 	1       0.417    4.03200
+#endif
+#ifdef _FF_AMBER99
+     1	amber99_67   1	SOL     OW      1      -0.834    9.95200
+     2	amber99_66   1	SOL    HW1      1       0.417    4.03200
+     3	amber99_66   1	SOL    HW2 	1       0.417    4.03200
+#endif
+
+[ settles ]
+; OW	funct	doh	dhh
+1       1       0.09572 0.15139
+
+[ exclusions ]
+1	2	3
+2	1	3
+3	1	2

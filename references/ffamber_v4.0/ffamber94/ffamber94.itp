@@ -1,0 +1,21 @@
+; ########################################################################
+; #                                                                      #
+; #    ffAMBER ports for GROMACS 4.0.2, 4.0.3, & 4.04 - February 2008    #
+; #       Eric J. Sorin - CSU Long Beach, Dept. of Chem & Biochem        #
+; #                  With significant contributions from                 #
+; #            Sanghyun Park, Jory Z. Ruscio, and Erik Thompson          #
+; #   Please cite: Sorin & Pande (2005). Biophys. J. 88(4), 2472-2493.   #
+; #            For additional information, tools, and updates            #
+; #          please consult http://chemistry.csulb.edu/ffamber/          #
+; #                                                                      #
+; ########################################################################
+
+#define _FF_AMBER
+#define _FF_AMBER94
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+#include "ffamber94nb.itp"
+#include "ffamber94bon.itp"

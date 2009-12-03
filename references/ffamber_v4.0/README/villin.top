@@ -1,0 +1,5475 @@
+;
+;	File 'villin.top' was generated
+;	By user: your username
+;	On host: your hostname
+;	At date: Mon Jun  1 16:18:57 2009
+;
+;	This is your topology file
+;	VILLIN HEADPEICE
+;
+; Include forcefield parameters
+#include "ffamber94.itp"
+
+[ moleculetype ]
+; Name            nrexcl
+Protein             3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+     1 amber94_39      1   NMET      N      1     0.1592      14.01   ; qtot 0.1592
+     2 amber94_17      1   NMET     H1      2     0.1984      1.008   ; qtot 0.3576
+     3 amber94_17      1   NMET     H2      2     0.1984      1.008   ; qtot 0.556
+     4 amber94_17      1   NMET     H3      2     0.1984      1.008   ; qtot 0.7544
+     5 amber94_11      1   NMET     CA      3     0.0221      12.01   ; qtot 0.7765
+     6 amber94_28      1   NMET     HA      4     0.1116      1.008   ; qtot 0.8881
+     7 amber94_11      1   NMET     CB      5     0.0865      12.01   ; qtot 0.9746
+     8 amber94_18      1   NMET    HB1      6     0.0125      1.008   ; qtot 0.9871
+     9 amber94_18      1   NMET    HB2      7     0.0125      1.008   ; qtot 0.9996
+    10 amber94_11      1   NMET     CG      8     0.0334      12.01   ; qtot 1.033
+    11 amber94_19      1   NMET    HG1      9     0.0292      1.008   ; qtot 1.062
+    12 amber94_19      1   NMET    HG2     10     0.0292      1.008   ; qtot 1.091
+    13 amber94_47      1   NMET     SD     11    -0.2774      32.06   ; qtot 0.814
+    14 amber94_11      1   NMET     CE     12    -0.0341      12.01   ; qtot 0.7799
+    15 amber94_19      1   NMET    HE1     13     0.0597      1.008   ; qtot 0.8396
+    16 amber94_19      1   NMET    HE2     14     0.0597      1.008   ; qtot 0.8993
+    17 amber94_19      1   NMET    HE3     15     0.0597      1.008   ; qtot 0.959
+    18  amber94_2      1   NMET      C     16     0.6123      12.01   ; qtot 1.571
+    19 amber94_41      1   NMET      O     17    -0.5713         16   ; qtot 1
+    20 amber94_34      2    LEU      N     18    -0.4157      14.01   ; qtot 0.5843
+    21 amber94_17      2    LEU      H     19     0.2719      1.008   ; qtot 0.8562
+    22 amber94_11      2    LEU     CA     20    -0.0518      12.01   ; qtot 0.8044
+    23 amber94_19      2    LEU     HA     21     0.0922      1.008   ; qtot 0.8966
+    24 amber94_11      2    LEU     CB     22    -0.1102      12.01   ; qtot 0.7864
+    25 amber94_18      2    LEU    HB1     23     0.0457      1.008   ; qtot 0.8321
+    26 amber94_18      2    LEU    HB2     24     0.0457      1.008   ; qtot 0.8778
+    27 amber94_11      2    LEU     CG     25     0.3531      12.01   ; qtot 1.231
+    28 amber94_18      2    LEU     HG     26    -0.0361      1.008   ; qtot 1.195
+    29 amber94_11      2    LEU    CD1     27    -0.4121      12.01   ; qtot 0.7827
+    30 amber94_18      2    LEU   HD11     28        0.1      1.008   ; qtot 0.8827
+    31 amber94_18      2    LEU   HD12     29        0.1      1.008   ; qtot 0.9827
+    32 amber94_18      2    LEU   HD13     30        0.1      1.008   ; qtot 1.083
+    33 amber94_11      2    LEU    CD2     31    -0.4121      12.01   ; qtot 0.6706
+    34 amber94_18      2    LEU   HD21     32        0.1      1.008   ; qtot 0.7706
+    35 amber94_18      2    LEU   HD22     33        0.1      1.008   ; qtot 0.8706
+    36 amber94_18      2    LEU   HD23     34        0.1      1.008   ; qtot 0.9706
+    37  amber94_2      2    LEU      C     35     0.5973      12.01   ; qtot 1.568
+    38 amber94_41      2    LEU      O     36    -0.5679         16   ; qtot 1
+    39 amber94_34      3    SER      N     37    -0.4157      14.01   ; qtot 0.5843
+    40 amber94_17      3    SER      H     38     0.2719      1.008   ; qtot 0.8562
+    41 amber94_11      3    SER     CA     39    -0.0249      12.01   ; qtot 0.8313
+    42 amber94_19      3    SER     HA     40     0.0843      1.008   ; qtot 0.9156
+    43 amber94_11      3    SER     CB     41     0.2117      12.01   ; qtot 1.127
+    44 amber94_19      3    SER    HB1     42     0.0352      1.008   ; qtot 1.163
+    45 amber94_19      3    SER    HB2     43     0.0352      1.008   ; qtot 1.198
+    46 amber94_43      3    SER     OG     44    -0.6546         16   ; qtot 0.5431
+    47 amber94_25      3    SER     HG     45     0.4275      1.008   ; qtot 0.9706
+    48  amber94_2      3    SER      C     46     0.5973      12.01   ; qtot 1.568
+    49 amber94_41      3    SER      O     47    -0.5679         16   ; qtot 1
+    50 amber94_34      4    ASP      N     48    -0.5163      14.01   ; qtot 0.4837
+    51 amber94_17      4    ASP      H     49     0.2936      1.008   ; qtot 0.7773
+    52 amber94_11      4    ASP     CA     50     0.0381      12.01   ; qtot 0.8154
+    53 amber94_19      4    ASP     HA     51      0.088      1.008   ; qtot 0.9034
+    54 amber94_11      4    ASP     CB     52    -0.0303      12.01   ; qtot 0.8731
+    55 amber94_18      4    ASP    HB1     53    -0.0122      1.008   ; qtot 0.8609
+    56 amber94_18      4    ASP    HB2     54    -0.0122      1.008   ; qtot 0.8487
+    57  amber94_2      4    ASP     CG     55     0.7994      12.01   ; qtot 1.648
+    58 amber94_45      4    ASP    OD1     56    -0.8014         16   ; qtot 0.8467
+    59 amber94_45      4    ASP    OD2     57    -0.8014         16   ; qtot 0.0453
+    60  amber94_2      4    ASP      C     58     0.5366      12.01   ; qtot 0.5819
+    61 amber94_41      4    ASP      O     59    -0.5819         16   ; qtot 0
+    62 amber94_34      5    GLU      N     60    -0.5163      14.01   ; qtot -0.5163
+    63 amber94_17      5    GLU      H     61     0.2936      1.008   ; qtot -0.2227
+    64 amber94_11      5    GLU     CA     62     0.0397      12.01   ; qtot -0.183
+    65 amber94_19      5    GLU     HA     63     0.1105      1.008   ; qtot -0.0725
+    66 amber94_11      5    GLU     CB     64      0.056      12.01   ; qtot -0.0165
+    67 amber94_18      5    GLU    HB1     65    -0.0173      1.008   ; qtot -0.0338
+    68 amber94_18      5    GLU    HB2     66    -0.0173      1.008   ; qtot -0.0511
+    69 amber94_11      5    GLU     CG     67     0.0136      12.01   ; qtot -0.0375
+    70 amber94_18      5    GLU    HG1     68    -0.0425      1.008   ; qtot -0.08
+    71 amber94_18      5    GLU    HG2     69    -0.0425      1.008   ; qtot -0.1225
+    72  amber94_2      5    GLU     CD     70     0.8054      12.01   ; qtot 0.6829
+    73 amber94_45      5    GLU    OE1     71    -0.8188         16   ; qtot -0.1359
+    74 amber94_45      5    GLU    OE2     72    -0.8188         16   ; qtot -0.9547
+    75  amber94_2      5    GLU      C     73     0.5366      12.01   ; qtot -0.4181
+    76 amber94_41      5    GLU      O     74    -0.5819         16   ; qtot -1
+    77 amber94_34      6    ASP      N     75    -0.5163      14.01   ; qtot -1.516
+    78 amber94_17      6    ASP      H     76     0.2936      1.008   ; qtot -1.223
+    79 amber94_11      6    ASP     CA     77     0.0381      12.01   ; qtot -1.185
+    80 amber94_19      6    ASP     HA     78      0.088      1.008   ; qtot -1.097
+    81 amber94_11      6    ASP     CB     79    -0.0303      12.01   ; qtot -1.127
+    82 amber94_18      6    ASP    HB1     80    -0.0122      1.008   ; qtot -1.139
+    83 amber94_18      6    ASP    HB2     81    -0.0122      1.008   ; qtot -1.151
+    84  amber94_2      6    ASP     CG     82     0.7994      12.01   ; qtot -0.3519
+    85 amber94_45      6    ASP    OD1     83    -0.8014         16   ; qtot -1.153
+    86 amber94_45      6    ASP    OD2     84    -0.8014         16   ; qtot -1.955
+    87  amber94_2      6    ASP      C     85     0.5366      12.01   ; qtot -1.418
+    88 amber94_41      6    ASP      O     86    -0.5819         16   ; qtot -2
+    89 amber94_34      7    PHE      N     87    -0.4157      14.01   ; qtot -2.416
+    90 amber94_17      7    PHE      H     88     0.2719      1.008   ; qtot -2.144
+    91 amber94_11      7    PHE     CA     89    -0.0024      12.01   ; qtot -2.146
+    92 amber94_19      7    PHE     HA     90     0.0978      1.008   ; qtot -2.048
+    93 amber94_11      7    PHE     CB     91    -0.0343      12.01   ; qtot -2.083
+    94 amber94_18      7    PHE    HB1     92     0.0295      1.008   ; qtot -2.053
+    95 amber94_18      7    PHE    HB2     93     0.0295      1.008   ; qtot -2.024
+    96  amber94_3      7    PHE     CG     94     0.0118      12.01   ; qtot -2.012
+    97  amber94_3      7    PHE    CD1     95    -0.1256      12.01   ; qtot -2.138
+    98 amber94_22      7    PHE    HD1     96      0.133      1.008   ; qtot -2.005
+    99  amber94_3      7    PHE    CE1     97    -0.1704      12.01   ; qtot -2.175
+   100 amber94_22      7    PHE    HE1     98      0.143      1.008   ; qtot -2.032
+   101  amber94_3      7    PHE     CZ     99    -0.1072      12.01   ; qtot -2.139
+   102 amber94_22      7    PHE     HZ    100     0.1297      1.008   ; qtot -2.009
+   103  amber94_3      7    PHE    CE2    101    -0.1704      12.01   ; qtot -2.18
+   104 amber94_22      7    PHE    HE2    102      0.143      1.008   ; qtot -2.037
+   105  amber94_3      7    PHE    CD2    103    -0.1256      12.01   ; qtot -2.162
+   106 amber94_22      7    PHE    HD2    104      0.133      1.008   ; qtot -2.029
+   107  amber94_2      7    PHE      C    105     0.5973      12.01   ; qtot -1.432
+   108 amber94_41      7    PHE      O    106    -0.5679         16   ; qtot -2
+   109 amber94_34      8    LYP      N    107    -0.3479      14.01   ; qtot -2.348
+   110 amber94_17      8    LYP      H    108     0.2747      1.008   ; qtot -2.073
+   111 amber94_11      8    LYP     CA    109      -0.24      12.01   ; qtot -2.313
+   112 amber94_19      8    LYP     HA    110     0.1426      1.008   ; qtot -2.171
+   113 amber94_11      8    LYP     CB    111    -0.0094      12.01   ; qtot -2.18
+   114 amber94_18      8    LYP    HB1    112     0.0362      1.008   ; qtot -2.144
+   115 amber94_18      8    LYP    HB2    113     0.0362      1.008   ; qtot -2.108
+   116 amber94_11      8    LYP     CG    114     0.0187      12.01   ; qtot -2.089
+   117 amber94_18      8    LYP    HG1    115     0.0103      1.008   ; qtot -2.079
+   118 amber94_18      8    LYP    HG2    116     0.0103      1.008   ; qtot -2.068
+   119 amber94_11      8    LYP     CD    117    -0.0479      12.01   ; qtot -2.116
+   120 amber94_18      8    LYP    HD1    118     0.0621      1.008   ; qtot -2.054
+   121 amber94_18      8    LYP    HD2    119     0.0621      1.008   ; qtot -1.992
+   122 amber94_11      8    LYP     CE    120    -0.0143      12.01   ; qtot -2.006
+   123 amber94_28      8    LYP    HE1    121     0.1135      1.008   ; qtot -1.893
+   124 amber94_28      8    LYP    HE2    122     0.1135      1.008   ; qtot -1.779
+   125 amber94_39      8    LYP     NZ    123    -0.3854      14.01   ; qtot -2.165
+   126 amber94_17      8    LYP    HZ1    124       0.34      1.008   ; qtot -1.825
+   127 amber94_17      8    LYP    HZ2    125       0.34      1.008   ; qtot -1.485
+   128 amber94_17      8    LYP    HZ3    126       0.34      1.008   ; qtot -1.145
+   129  amber94_2      8    LYP      C    127     0.7341      12.01   ; qtot -0.4106
+   130 amber94_41      8    LYP      O    128    -0.5894         16   ; qtot -1
+   131 amber94_34      9    ALA      N    129    -0.4157      14.01   ; qtot -1.416
+   132 amber94_17      9    ALA      H    130     0.2719      1.008   ; qtot -1.144
+   133 amber94_11      9    ALA     CA    131     0.0337      12.01   ; qtot -1.11
+   134 amber94_19      9    ALA     HA    132     0.0823      1.008   ; qtot -1.028
+   135 amber94_11      9    ALA     CB    133    -0.1825      12.01   ; qtot -1.21
+   136 amber94_18      9    ALA    HB1    134     0.0603      1.008   ; qtot -1.15
+   137 amber94_18      9    ALA    HB2    135     0.0603      1.008   ; qtot -1.09
+   138 amber94_18      9    ALA    HB3    136     0.0603      1.008   ; qtot -1.029
+   139  amber94_2      9    ALA      C    137     0.5973      12.01   ; qtot -0.4321
+   140 amber94_41      9    ALA      O    138    -0.5679         16   ; qtot -1
+   141 amber94_34     10    VAL      N    139    -0.4157      14.01   ; qtot -1.416
+   142 amber94_17     10    VAL      H    140     0.2719      1.008   ; qtot -1.144
+   143 amber94_11     10    VAL     CA    141    -0.0875      12.01   ; qtot -1.231
+   144 amber94_19     10    VAL     HA    142     0.0969      1.008   ; qtot -1.134
+   145 amber94_11     10    VAL     CB    143     0.2985      12.01   ; qtot -0.8359
+   146 amber94_18     10    VAL     HB    144    -0.0297      1.008   ; qtot -0.8656
+   147 amber94_11     10    VAL    CG1    145    -0.3192      12.01   ; qtot -1.185
+   148 amber94_18     10    VAL   HG11    146     0.0791      1.008   ; qtot -1.106
+   149 amber94_18     10    VAL   HG12    147     0.0791      1.008   ; qtot -1.027
+   150 amber94_18     10    VAL   HG13    148     0.0791      1.008   ; qtot -0.9475
+   151 amber94_11     10    VAL    CG2    149    -0.3192      12.01   ; qtot -1.267
+   152 amber94_18     10    VAL   HG21    150     0.0791      1.008   ; qtot -1.188
+   153 amber94_18     10    VAL   HG22    151     0.0791      1.008   ; qtot -1.109
+   154 amber94_18     10    VAL   HG23    152     0.0791      1.008   ; qtot -1.029
+   155  amber94_2     10    VAL      C    153     0.5973      12.01   ; qtot -0.4321
+   156 amber94_41     10    VAL      O    154    -0.5679         16   ; qtot -1
+   157 amber94_34     11    PHE      N    155    -0.4157      14.01   ; qtot -1.416
+   158 amber94_17     11    PHE      H    156     0.2719      1.008   ; qtot -1.144
+   159 amber94_11     11    PHE     CA    157    -0.0024      12.01   ; qtot -1.146
+   160 amber94_19     11    PHE     HA    158     0.0978      1.008   ; qtot -1.048
+   161 amber94_11     11    PHE     CB    159    -0.0343      12.01   ; qtot -1.083
+   162 amber94_18     11    PHE    HB1    160     0.0295      1.008   ; qtot -1.053
+   163 amber94_18     11    PHE    HB2    161     0.0295      1.008   ; qtot -1.024
+   164  amber94_3     11    PHE     CG    162     0.0118      12.01   ; qtot -1.012
+   165  amber94_3     11    PHE    CD1    163    -0.1256      12.01   ; qtot -1.138
+   166 amber94_22     11    PHE    HD1    164      0.133      1.008   ; qtot -1.005
+   167  amber94_3     11    PHE    CE1    165    -0.1704      12.01   ; qtot -1.175
+   168 amber94_22     11    PHE    HE1    166      0.143      1.008   ; qtot -1.032
+   169  amber94_3     11    PHE     CZ    167    -0.1072      12.01   ; qtot -1.139
+   170 amber94_22     11    PHE     HZ    168     0.1297      1.008   ; qtot -1.009
+   171  amber94_3     11    PHE    CE2    169    -0.1704      12.01   ; qtot -1.18
+   172 amber94_22     11    PHE    HE2    170      0.143      1.008   ; qtot -1.037
+   173  amber94_3     11    PHE    CD2    171    -0.1256      12.01   ; qtot -1.162
+   174 amber94_22     11    PHE    HD2    172      0.133      1.008   ; qtot -1.029
+   175  amber94_2     11    PHE      C    173     0.5973      12.01   ; qtot -0.4321
+   176 amber94_41     11    PHE      O    174    -0.5679         16   ; qtot -1
+   177 amber94_34     12    GLY      N    175    -0.4157      14.01   ; qtot -1.416
+   178 amber94_17     12    GLY      H    176     0.2719      1.008   ; qtot -1.144
+   179 amber94_11     12    GLY     CA    177    -0.0252      12.01   ; qtot -1.169
+   180 amber94_19     12    GLY    HA1    178     0.0698      1.008   ; qtot -1.099
+   181 amber94_19     12    GLY    HA2    179     0.0698      1.008   ; qtot -1.029
+   182  amber94_2     12    GLY      C    180     0.5973      12.01   ; qtot -0.4321
+   183 amber94_41     12    GLY      O    181    -0.5679         16   ; qtot -1
+   184 amber94_34     13    MET      N    182    -0.4157      14.01   ; qtot -1.416
+   185 amber94_17     13    MET      H    183     0.2719      1.008   ; qtot -1.144
+   186 amber94_11     13    MET     CA    184    -0.0237      12.01   ; qtot -1.167
+   187 amber94_19     13    MET     HA    185      0.088      1.008   ; qtot -1.079
+   188 amber94_11     13    MET     CB    186     0.0342      12.01   ; qtot -1.045
+   189 amber94_18     13    MET    HB1    187     0.0241      1.008   ; qtot -1.021
+   190 amber94_18     13    MET    HB2    188     0.0241      1.008   ; qtot -0.9971
+   191 amber94_11     13    MET     CG    189     0.0018      12.01   ; qtot -0.9953
+   192 amber94_19     13    MET    HG1    190      0.044      1.008   ; qtot -0.9513
+   193 amber94_19     13    MET    HG2    191      0.044      1.008   ; qtot -0.9073
+   194 amber94_47     13    MET     SD    192    -0.2737      32.06   ; qtot -1.181
+   195 amber94_11     13    MET     CE    193    -0.0536      12.01   ; qtot -1.235
+   196 amber94_19     13    MET    HE1    194     0.0684      1.008   ; qtot -1.166
+   197 amber94_19     13    MET    HE2    195     0.0684      1.008   ; qtot -1.098
+   198 amber94_19     13    MET    HE3    196     0.0684      1.008   ; qtot -1.029
+   199  amber94_2     13    MET      C    197     0.5973      12.01   ; qtot -0.4321
+   200 amber94_41     13    MET      O    198    -0.5679         16   ; qtot -1
+   201 amber94_34     14    THR      N    199    -0.4157      14.01   ; qtot -1.416
+   202 amber94_17     14    THR      H    200     0.2719      1.008   ; qtot -1.144
+   203 amber94_11     14    THR     CA    201    -0.0389      12.01   ; qtot -1.183
+   204 amber94_19     14    THR     HA    202     0.1007      1.008   ; qtot -1.082
+   205 amber94_11     14    THR     CB    203     0.3654      12.01   ; qtot -0.7166
+   206 amber94_19     14    THR     HB    204     0.0043      1.008   ; qtot -0.7123
+   207 amber94_11     14    THR    CG2    205    -0.2438      12.01   ; qtot -0.9561
+   208 amber94_18     14    THR   HG21    206     0.0642      1.008   ; qtot -0.8919
+   209 amber94_18     14    THR   HG22    207     0.0642      1.008   ; qtot -0.8277
+   210 amber94_18     14    THR   HG23    208     0.0642      1.008   ; qtot -0.7635
+   211 amber94_43     14    THR    OG1    209    -0.6761         16   ; qtot -1.44
+   212 amber94_25     14    THR    HG1    210     0.4102      1.008   ; qtot -1.029
+   213  amber94_2     14    THR      C    211     0.5973      12.01   ; qtot -0.4321
+   214 amber94_41     14    THR      O    212    -0.5679         16   ; qtot -1
+   215 amber94_34     15    ARG      N    213    -0.3479      14.01   ; qtot -1.348
+   216 amber94_17     15    ARG      H    214     0.2747      1.008   ; qtot -1.073
+   217 amber94_11     15    ARG     CA    215    -0.2637      12.01   ; qtot -1.337
+   218 amber94_19     15    ARG     HA    216      0.156      1.008   ; qtot -1.181
+   219 amber94_11     15    ARG     CB    217    -0.0007      12.01   ; qtot -1.182
+   220 amber94_18     15    ARG    HB1    218     0.0327      1.008   ; qtot -1.149
+   221 amber94_18     15    ARG    HB2    219     0.0327      1.008   ; qtot -1.116
+   222 amber94_11     15    ARG     CG    220      0.039      12.01   ; qtot -1.077
+   223 amber94_18     15    ARG    HG1    221     0.0285      1.008   ; qtot -1.049
+   224 amber94_18     15    ARG    HG2    222     0.0285      1.008   ; qtot -1.02
+   225 amber94_11     15    ARG     CD    223     0.0486      12.01   ; qtot -0.9716
+   226 amber94_19     15    ARG    HD1    224     0.0687      1.008   ; qtot -0.9029
+   227 amber94_19     15    ARG    HD2    225     0.0687      1.008   ; qtot -0.8342
+   228 amber94_38     15    ARG     NE    226    -0.5295      14.01   ; qtot -1.364
+   229 amber94_17     15    ARG     HE    227     0.3456      1.008   ; qtot -1.018
+   230  amber94_3     15    ARG     CZ    228     0.8076      12.01   ; qtot -0.2105
+   231 amber94_38     15    ARG    NH1    229    -0.8627      14.01   ; qtot -1.073
+   232 amber94_17     15    ARG   HH11    230     0.4478      1.008   ; qtot -0.6254
+   233 amber94_17     15    ARG   HH12    231     0.4478      1.008   ; qtot -0.1776
+   234 amber94_38     15    ARG    NH2    232    -0.8627      14.01   ; qtot -1.04
+   235 amber94_17     15    ARG   HH21    233     0.4478      1.008   ; qtot -0.5925
+   236 amber94_17     15    ARG   HH22    234     0.4478      1.008   ; qtot -0.1447
+   237  amber94_2     15    ARG      C    235     0.7341      12.01   ; qtot 0.5894
+   238 amber94_41     15    ARG      O    236    -0.5894         16   ; qtot 0
+   239 amber94_34     16    SER      N    237    -0.4157      14.01   ; qtot -0.4157
+   240 amber94_17     16    SER      H    238     0.2719      1.008   ; qtot -0.1438
+   241 amber94_11     16    SER     CA    239    -0.0249      12.01   ; qtot -0.1687
+   242 amber94_19     16    SER     HA    240     0.0843      1.008   ; qtot -0.0844
+   243 amber94_11     16    SER     CB    241     0.2117      12.01   ; qtot 0.1273
+   244 amber94_19     16    SER    HB1    242     0.0352      1.008   ; qtot 0.1625
+   245 amber94_19     16    SER    HB2    243     0.0352      1.008   ; qtot 0.1977
+   246 amber94_43     16    SER     OG    244    -0.6546         16   ; qtot -0.4569
+   247 amber94_25     16    SER     HG    245     0.4275      1.008   ; qtot -0.0294
+   248  amber94_2     16    SER      C    246     0.5973      12.01   ; qtot 0.5679
+   249 amber94_41     16    SER      O    247    -0.5679         16   ; qtot 0
+   250 amber94_34     17    ALA      N    248    -0.4157      14.01   ; qtot -0.4157
+   251 amber94_17     17    ALA      H    249     0.2719      1.008   ; qtot -0.1438
+   252 amber94_11     17    ALA     CA    250     0.0337      12.01   ; qtot -0.1101
+   253 amber94_19     17    ALA     HA    251     0.0823      1.008   ; qtot -0.0278
+   254 amber94_11     17    ALA     CB    252    -0.1825      12.01   ; qtot -0.2103
+   255 amber94_18     17    ALA    HB1    253     0.0603      1.008   ; qtot -0.15
+   256 amber94_18     17    ALA    HB2    254     0.0603      1.008   ; qtot -0.0897
+   257 amber94_18     17    ALA    HB3    255     0.0603      1.008   ; qtot -0.0294
+   258  amber94_2     17    ALA      C    256     0.5973      12.01   ; qtot 0.5679
+   259 amber94_41     17    ALA      O    257    -0.5679         16   ; qtot 0
+   260 amber94_34     18    PHE      N    258    -0.4157      14.01   ; qtot -0.4157
+   261 amber94_17     18    PHE      H    259     0.2719      1.008   ; qtot -0.1438
+   262 amber94_11     18    PHE     CA    260    -0.0024      12.01   ; qtot -0.1462
+   263 amber94_19     18    PHE     HA    261     0.0978      1.008   ; qtot -0.0484
+   264 amber94_11     18    PHE     CB    262    -0.0343      12.01   ; qtot -0.0827
+   265 amber94_18     18    PHE    HB1    263     0.0295      1.008   ; qtot -0.0532
+   266 amber94_18     18    PHE    HB2    264     0.0295      1.008   ; qtot -0.0237
+   267  amber94_3     18    PHE     CG    265     0.0118      12.01   ; qtot -0.0119
+   268  amber94_3     18    PHE    CD1    266    -0.1256      12.01   ; qtot -0.1375
+   269 amber94_22     18    PHE    HD1    267      0.133      1.008   ; qtot -0.0045
+   270  amber94_3     18    PHE    CE1    268    -0.1704      12.01   ; qtot -0.1749
+   271 amber94_22     18    PHE    HE1    269      0.143      1.008   ; qtot -0.0319
+   272  amber94_3     18    PHE     CZ    270    -0.1072      12.01   ; qtot -0.1391
+   273 amber94_22     18    PHE     HZ    271     0.1297      1.008   ; qtot -0.0094
+   274  amber94_3     18    PHE    CE2    272    -0.1704      12.01   ; qtot -0.1798
+   275 amber94_22     18    PHE    HE2    273      0.143      1.008   ; qtot -0.0368
+   276  amber94_3     18    PHE    CD2    274    -0.1256      12.01   ; qtot -0.1624
+   277 amber94_22     18    PHE    HD2    275      0.133      1.008   ; qtot -0.0294
+   278  amber94_2     18    PHE      C    276     0.5973      12.01   ; qtot 0.5679
+   279 amber94_41     18    PHE      O    277    -0.5679         16   ; qtot 0
+   280 amber94_34     19    ALA      N    278    -0.4157      14.01   ; qtot -0.4157
+   281 amber94_17     19    ALA      H    279     0.2719      1.008   ; qtot -0.1438
+   282 amber94_11     19    ALA     CA    280     0.0337      12.01   ; qtot -0.1101
+   283 amber94_19     19    ALA     HA    281     0.0823      1.008   ; qtot -0.0278
+   284 amber94_11     19    ALA     CB    282    -0.1825      12.01   ; qtot -0.2103
+   285 amber94_18     19    ALA    HB1    283     0.0603      1.008   ; qtot -0.15
+   286 amber94_18     19    ALA    HB2    284     0.0603      1.008   ; qtot -0.0897
+   287 amber94_18     19    ALA    HB3    285     0.0603      1.008   ; qtot -0.0294
+   288  amber94_2     19    ALA      C    286     0.5973      12.01   ; qtot 0.5679
+   289 amber94_41     19    ALA      O    287    -0.5679         16   ; qtot 0
+   290 amber94_34     20    ASN      N    288    -0.4157      14.01   ; qtot -0.4157
+   291 amber94_17     20    ASN      H    289     0.2719      1.008   ; qtot -0.1438
+   292 amber94_11     20    ASN     CA    290     0.0143      12.01   ; qtot -0.1295
+   293 amber94_19     20    ASN     HA    291     0.1048      1.008   ; qtot -0.0247
+   294 amber94_11     20    ASN     CB    292    -0.2041      12.01   ; qtot -0.2288
+   295 amber94_18     20    ASN    HB1    293     0.0797      1.008   ; qtot -0.1491
+   296 amber94_18     20    ASN    HB2    294     0.0797      1.008   ; qtot -0.0694
+   297  amber94_2     20    ASN     CG    295      0.713      12.01   ; qtot 0.6436
+   298 amber94_41     20    ASN    OD1    296    -0.5931         16   ; qtot 0.0505
+   299 amber94_34     20    ASN    ND2    297    -0.9191      14.01   ; qtot -0.8686
+   300 amber94_17     20    ASN   HD21    298     0.4196      1.008   ; qtot -0.449
+   301 amber94_17     20    ASN   HD22    299     0.4196      1.008   ; qtot -0.0294
+   302  amber94_2     20    ASN      C    300     0.5973      12.01   ; qtot 0.5679
+   303 amber94_41     20    ASN      O    301    -0.5679         16   ; qtot 0
+   304 amber94_34     21    LEU      N    302    -0.4157      14.01   ; qtot -0.4157
+   305 amber94_17     21    LEU      H    303     0.2719      1.008   ; qtot -0.1438
+   306 amber94_11     21    LEU     CA    304    -0.0518      12.01   ; qtot -0.1956
+   307 amber94_19     21    LEU     HA    305     0.0922      1.008   ; qtot -0.1034
+   308 amber94_11     21    LEU     CB    306    -0.1102      12.01   ; qtot -0.2136
+   309 amber94_18     21    LEU    HB1    307     0.0457      1.008   ; qtot -0.1679
+   310 amber94_18     21    LEU    HB2    308     0.0457      1.008   ; qtot -0.1222
+   311 amber94_11     21    LEU     CG    309     0.3531      12.01   ; qtot 0.2309
+   312 amber94_18     21    LEU     HG    310    -0.0361      1.008   ; qtot 0.1948
+   313 amber94_11     21    LEU    CD1    311    -0.4121      12.01   ; qtot -0.2173
+   314 amber94_18     21    LEU   HD11    312        0.1      1.008   ; qtot -0.1173
+   315 amber94_18     21    LEU   HD12    313        0.1      1.008   ; qtot -0.0173
+   316 amber94_18     21    LEU   HD13    314        0.1      1.008   ; qtot 0.0827
+   317 amber94_11     21    LEU    CD2    315    -0.4121      12.01   ; qtot -0.3294
+   318 amber94_18     21    LEU   HD21    316        0.1      1.008   ; qtot -0.2294
+   319 amber94_18     21    LEU   HD22    317        0.1      1.008   ; qtot -0.1294
+   320 amber94_18     21    LEU   HD23    318        0.1      1.008   ; qtot -0.0294
+   321  amber94_2     21    LEU      C    319     0.5973      12.01   ; qtot 0.5679
+   322 amber94_41     21    LEU      O    320    -0.5679         16   ; qtot 0
+   323 amber94_34     22    PRO      N    321    -0.2548      14.01   ; qtot -0.2548
+   324 amber94_11     22    PRO     CD    322     0.0192      12.01   ; qtot -0.2356
+   325 amber94_19     22    PRO    HD1    323     0.0391      1.008   ; qtot -0.1965
+   326 amber94_19     22    PRO    HD2    324     0.0391      1.008   ; qtot -0.1574
+   327 amber94_11     22    PRO     CG    325     0.0189      12.01   ; qtot -0.1385
+   328 amber94_18     22    PRO    HG1    326     0.0213      1.008   ; qtot -0.1172
+   329 amber94_18     22    PRO    HG2    327     0.0213      1.008   ; qtot -0.0959
+   330 amber94_11     22    PRO     CB    328     -0.007      12.01   ; qtot -0.1029
+   331 amber94_18     22    PRO    HB1    329     0.0253      1.008   ; qtot -0.0776
+   332 amber94_18     22    PRO    HB2    330     0.0253      1.008   ; qtot -0.0523
+   333 amber94_11     22    PRO     CA    331    -0.0266      12.01   ; qtot -0.0789
+   334 amber94_19     22    PRO     HA    332     0.0641      1.008   ; qtot -0.0148
+   335  amber94_2     22    PRO      C    333     0.5896      12.01   ; qtot 0.5748
+   336 amber94_41     22    PRO      O    334    -0.5748         16   ; qtot 0
+   337 amber94_34     23    LEU      N    335    -0.4157      14.01   ; qtot -0.4157
+   338 amber94_17     23    LEU      H    336     0.2719      1.008   ; qtot -0.1438
+   339 amber94_11     23    LEU     CA    337    -0.0518      12.01   ; qtot -0.1956
+   340 amber94_19     23    LEU     HA    338     0.0922      1.008   ; qtot -0.1034
+   341 amber94_11     23    LEU     CB    339    -0.1102      12.01   ; qtot -0.2136
+   342 amber94_18     23    LEU    HB1    340     0.0457      1.008   ; qtot -0.1679
+   343 amber94_18     23    LEU    HB2    341     0.0457      1.008   ; qtot -0.1222
+   344 amber94_11     23    LEU     CG    342     0.3531      12.01   ; qtot 0.2309
+   345 amber94_18     23    LEU     HG    343    -0.0361      1.008   ; qtot 0.1948
+   346 amber94_11     23    LEU    CD1    344    -0.4121      12.01   ; qtot -0.2173
+   347 amber94_18     23    LEU   HD11    345        0.1      1.008   ; qtot -0.1173
+   348 amber94_18     23    LEU   HD12    346        0.1      1.008   ; qtot -0.0173
+   349 amber94_18     23    LEU   HD13    347        0.1      1.008   ; qtot 0.0827
+   350 amber94_11     23    LEU    CD2    348    -0.4121      12.01   ; qtot -0.3294
+   351 amber94_18     23    LEU   HD21    349        0.1      1.008   ; qtot -0.2294
+   352 amber94_18     23    LEU   HD22    350        0.1      1.008   ; qtot -0.1294
+   353 amber94_18     23    LEU   HD23    351        0.1      1.008   ; qtot -0.0294
+   354  amber94_2     23    LEU      C    352     0.5973      12.01   ; qtot 0.5679
+   355 amber94_41     23    LEU      O    353    -0.5679         16   ; qtot 0
+   356 amber94_34     24    TRP      N    354    -0.4157      14.01   ; qtot -0.4157
+   357 amber94_17     24    TRP      H    355     0.2719      1.008   ; qtot -0.1438
+   358 amber94_11     24    TRP     CA    356    -0.0275      12.01   ; qtot -0.1713
+   359 amber94_19     24    TRP     HA    357     0.1123      1.008   ; qtot -0.059
+   360 amber94_11     24    TRP     CB    358     -0.005      12.01   ; qtot -0.064
+   361 amber94_18     24    TRP    HB1    359     0.0339      1.008   ; qtot -0.0301
+   362 amber94_18     24    TRP    HB2    360     0.0339      1.008   ; qtot 0.0038
+   363 amber94_14     24    TRP     CG    361    -0.1415      12.01   ; qtot -0.1377
+   364 amber94_13     24    TRP    CD1    362    -0.1638      12.01   ; qtot -0.3015
+   365 amber94_23     24    TRP    HD1    363     0.2062      1.008   ; qtot -0.0953
+   366 amber94_35     24    TRP    NE1    364    -0.3418      14.01   ; qtot -0.4371
+   367 amber94_17     24    TRP    HE1    365     0.3412      1.008   ; qtot -0.0959
+   368  amber94_8     24    TRP    CE2    366      0.138      12.01   ; qtot 0.0421
+   369  amber94_3     24    TRP    CZ2    367    -0.2601      12.01   ; qtot -0.218
+   370 amber94_22     24    TRP    HZ2    368     0.1572      1.008   ; qtot -0.0608
+   371  amber94_3     24    TRP    CH2    369    -0.1134      12.01   ; qtot -0.1742
+   372 amber94_22     24    TRP    HH2    370     0.1417      1.008   ; qtot -0.0325
+   373  amber94_3     24    TRP    CZ3    371    -0.1972      12.01   ; qtot -0.2297
+   374 amber94_22     24    TRP    HZ3    372     0.1447      1.008   ; qtot -0.085
+   375  amber94_3     24    TRP    CE3    373    -0.2387      12.01   ; qtot -0.3237
+   376 amber94_22     24    TRP    HE3    374       0.17      1.008   ; qtot -0.1537
+   377  amber94_4     24    TRP    CD2    375     0.1243      12.01   ; qtot -0.0294
+   378  amber94_2     24    TRP      C    376     0.5973      12.01   ; qtot 0.5679
+   379 amber94_41     24    TRP      O    377    -0.5679         16   ; qtot 0
+   380 amber94_34     25    LYP      N    378    -0.3479      14.01   ; qtot -0.3479
+   381 amber94_17     25    LYP      H    379     0.2747      1.008   ; qtot -0.0732
+   382 amber94_11     25    LYP     CA    380      -0.24      12.01   ; qtot -0.3132
+   383 amber94_19     25    LYP     HA    381     0.1426      1.008   ; qtot -0.1706
+   384 amber94_11     25    LYP     CB    382    -0.0094      12.01   ; qtot -0.18
+   385 amber94_18     25    LYP    HB1    383     0.0362      1.008   ; qtot -0.1438
+   386 amber94_18     25    LYP    HB2    384     0.0362      1.008   ; qtot -0.1076
+   387 amber94_11     25    LYP     CG    385     0.0187      12.01   ; qtot -0.0889
+   388 amber94_18     25    LYP    HG1    386     0.0103      1.008   ; qtot -0.0786
+   389 amber94_18     25    LYP    HG2    387     0.0103      1.008   ; qtot -0.0683
+   390 amber94_11     25    LYP     CD    388    -0.0479      12.01   ; qtot -0.1162
+   391 amber94_18     25    LYP    HD1    389     0.0621      1.008   ; qtot -0.0541
+   392 amber94_18     25    LYP    HD2    390     0.0621      1.008   ; qtot 0.008
+   393 amber94_11     25    LYP     CE    391    -0.0143      12.01   ; qtot -0.0063
+   394 amber94_28     25    LYP    HE1    392     0.1135      1.008   ; qtot 0.1072
+   395 amber94_28     25    LYP    HE2    393     0.1135      1.008   ; qtot 0.2207
+   396 amber94_39     25    LYP     NZ    394    -0.3854      14.01   ; qtot -0.1647
+   397 amber94_17     25    LYP    HZ1    395       0.34      1.008   ; qtot 0.1753
+   398 amber94_17     25    LYP    HZ2    396       0.34      1.008   ; qtot 0.5153
+   399 amber94_17     25    LYP    HZ3    397       0.34      1.008   ; qtot 0.8553
+   400  amber94_2     25    LYP      C    398     0.7341      12.01   ; qtot 1.589
+   401 amber94_41     25    LYP      O    399    -0.5894         16   ; qtot 1
+   402 amber94_34     26    GLN      N    400    -0.4157      14.01   ; qtot 0.5843
+   403 amber94_17     26    GLN      H    401     0.2719      1.008   ; qtot 0.8562
+   404 amber94_11     26    GLN     CA    402    -0.0031      12.01   ; qtot 0.8531
+   405 amber94_19     26    GLN     HA    403      0.085      1.008   ; qtot 0.9381
+   406 amber94_11     26    GLN     CB    404    -0.0036      12.01   ; qtot 0.9345
+   407 amber94_18     26    GLN    HB1    405     0.0171      1.008   ; qtot 0.9516
+   408 amber94_18     26    GLN    HB2    406     0.0171      1.008   ; qtot 0.9687
+   409 amber94_11     26    GLN     CG    407    -0.0645      12.01   ; qtot 0.9042
+   410 amber94_18     26    GLN    HG1    408     0.0352      1.008   ; qtot 0.9394
+   411 amber94_18     26    GLN    HG2    409     0.0352      1.008   ; qtot 0.9746
+   412  amber94_2     26    GLN     CD    410     0.6951      12.01   ; qtot 1.67
+   413 amber94_41     26    GLN    OE1    411    -0.6086         16   ; qtot 1.061
+   414 amber94_34     26    GLN    NE2    412    -0.9407      14.01   ; qtot 0.1204
+   415 amber94_17     26    GLN   HE21    413     0.4251      1.008   ; qtot 0.5455
+   416 amber94_17     26    GLN   HE22    414     0.4251      1.008   ; qtot 0.9706
+   417  amber94_2     26    GLN      C    415     0.5973      12.01   ; qtot 1.568
+   418 amber94_41     26    GLN      O    416    -0.5679         16   ; qtot 1
+   419 amber94_34     27    GLN      N    417    -0.4157      14.01   ; qtot 0.5843
+   420 amber94_17     27    GLN      H    418     0.2719      1.008   ; qtot 0.8562
+   421 amber94_11     27    GLN     CA    419    -0.0031      12.01   ; qtot 0.8531
+   422 amber94_19     27    GLN     HA    420      0.085      1.008   ; qtot 0.9381
+   423 amber94_11     27    GLN     CB    421    -0.0036      12.01   ; qtot 0.9345
+   424 amber94_18     27    GLN    HB1    422     0.0171      1.008   ; qtot 0.9516
+   425 amber94_18     27    GLN    HB2    423     0.0171      1.008   ; qtot 0.9687
+   426 amber94_11     27    GLN     CG    424    -0.0645      12.01   ; qtot 0.9042
+   427 amber94_18     27    GLN    HG1    425     0.0352      1.008   ; qtot 0.9394
+   428 amber94_18     27    GLN    HG2    426     0.0352      1.008   ; qtot 0.9746
+   429  amber94_2     27    GLN     CD    427     0.6951      12.01   ; qtot 1.67
+   430 amber94_41     27    GLN    OE1    428    -0.6086         16   ; qtot 1.061
+   431 amber94_34     27    GLN    NE2    429    -0.9407      14.01   ; qtot 0.1204
+   432 amber94_17     27    GLN   HE21    430     0.4251      1.008   ; qtot 0.5455
+   433 amber94_17     27    GLN   HE22    431     0.4251      1.008   ; qtot 0.9706
+   434  amber94_2     27    GLN      C    432     0.5973      12.01   ; qtot 1.568
+   435 amber94_41     27    GLN      O    433    -0.5679         16   ; qtot 1
+   436 amber94_34     28    ASN      N    434    -0.4157      14.01   ; qtot 0.5843
+   437 amber94_17     28    ASN      H    435     0.2719      1.008   ; qtot 0.8562
+   438 amber94_11     28    ASN     CA    436     0.0143      12.01   ; qtot 0.8705
+   439 amber94_19     28    ASN     HA    437     0.1048      1.008   ; qtot 0.9753
+   440 amber94_11     28    ASN     CB    438    -0.2041      12.01   ; qtot 0.7712
+   441 amber94_18     28    ASN    HB1    439     0.0797      1.008   ; qtot 0.8509
+   442 amber94_18     28    ASN    HB2    440     0.0797      1.008   ; qtot 0.9306
+   443  amber94_2     28    ASN     CG    441      0.713      12.01   ; qtot 1.644
+   444 amber94_41     28    ASN    OD1    442    -0.5931         16   ; qtot 1.05
+   445 amber94_34     28    ASN    ND2    443    -0.9191      14.01   ; qtot 0.1314
+   446 amber94_17     28    ASN   HD21    444     0.4196      1.008   ; qtot 0.551
+   447 amber94_17     28    ASN   HD22    445     0.4196      1.008   ; qtot 0.9706
+   448  amber94_2     28    ASN      C    446     0.5973      12.01   ; qtot 1.568
+   449 amber94_41     28    ASN      O    447    -0.5679         16   ; qtot 1
+   450 amber94_34     29    LEU      N    448    -0.4157      14.01   ; qtot 0.5843
+   451 amber94_17     29    LEU      H    449     0.2719      1.008   ; qtot 0.8562
+   452 amber94_11     29    LEU     CA    450    -0.0518      12.01   ; qtot 0.8044
+   453 amber94_19     29    LEU     HA    451     0.0922      1.008   ; qtot 0.8966
+   454 amber94_11     29    LEU     CB    452    -0.1102      12.01   ; qtot 0.7864
+   455 amber94_18     29    LEU    HB1    453     0.0457      1.008   ; qtot 0.8321
+   456 amber94_18     29    LEU    HB2    454     0.0457      1.008   ; qtot 0.8778
+   457 amber94_11     29    LEU     CG    455     0.3531      12.01   ; qtot 1.231
+   458 amber94_18     29    LEU     HG    456    -0.0361      1.008   ; qtot 1.195
+   459 amber94_11     29    LEU    CD1    457    -0.4121      12.01   ; qtot 0.7827
+   460 amber94_18     29    LEU   HD11    458        0.1      1.008   ; qtot 0.8827
+   461 amber94_18     29    LEU   HD12    459        0.1      1.008   ; qtot 0.9827
+   462 amber94_18     29    LEU   HD13    460        0.1      1.008   ; qtot 1.083
+   463 amber94_11     29    LEU    CD2    461    -0.4121      12.01   ; qtot 0.6706
+   464 amber94_18     29    LEU   HD21    462        0.1      1.008   ; qtot 0.7706
+   465 amber94_18     29    LEU   HD22    463        0.1      1.008   ; qtot 0.8706
+   466 amber94_18     29    LEU   HD23    464        0.1      1.008   ; qtot 0.9706
+   467  amber94_2     29    LEU      C    465     0.5973      12.01   ; qtot 1.568
+   468 amber94_41     29    LEU      O    466    -0.5679         16   ; qtot 1
+   469 amber94_34     30    LYP      N    467    -0.3479      14.01   ; qtot 0.6521
+   470 amber94_17     30    LYP      H    468     0.2747      1.008   ; qtot 0.9268
+   471 amber94_11     30    LYP     CA    469      -0.24      12.01   ; qtot 0.6868
+   472 amber94_19     30    LYP     HA    470     0.1426      1.008   ; qtot 0.8294
+   473 amber94_11     30    LYP     CB    471    -0.0094      12.01   ; qtot 0.82
+   474 amber94_18     30    LYP    HB1    472     0.0362      1.008   ; qtot 0.8562
+   475 amber94_18     30    LYP    HB2    473     0.0362      1.008   ; qtot 0.8924
+   476 amber94_11     30    LYP     CG    474     0.0187      12.01   ; qtot 0.9111
+   477 amber94_18     30    LYP    HG1    475     0.0103      1.008   ; qtot 0.9214
+   478 amber94_18     30    LYP    HG2    476     0.0103      1.008   ; qtot 0.9317
+   479 amber94_11     30    LYP     CD    477    -0.0479      12.01   ; qtot 0.8838
+   480 amber94_18     30    LYP    HD1    478     0.0621      1.008   ; qtot 0.9459
+   481 amber94_18     30    LYP    HD2    479     0.0621      1.008   ; qtot 1.008
+   482 amber94_11     30    LYP     CE    480    -0.0143      12.01   ; qtot 0.9937
+   483 amber94_28     30    LYP    HE1    481     0.1135      1.008   ; qtot 1.107
+   484 amber94_28     30    LYP    HE2    482     0.1135      1.008   ; qtot 1.221
+   485 amber94_39     30    LYP     NZ    483    -0.3854      14.01   ; qtot 0.8353
+   486 amber94_17     30    LYP    HZ1    484       0.34      1.008   ; qtot 1.175
+   487 amber94_17     30    LYP    HZ2    485       0.34      1.008   ; qtot 1.515
+   488 amber94_17     30    LYP    HZ3    486       0.34      1.008   ; qtot 1.855
+   489  amber94_2     30    LYP      C    487     0.7341      12.01   ; qtot 2.589
+   490 amber94_41     30    LYP      O    488    -0.5894         16   ; qtot 2
+   491 amber94_34     31    LYP      N    489    -0.3479      14.01   ; qtot 1.652
+   492 amber94_17     31    LYP      H    490     0.2747      1.008   ; qtot 1.927
+   493 amber94_11     31    LYP     CA    491      -0.24      12.01   ; qtot 1.687
+   494 amber94_19     31    LYP     HA    492     0.1426      1.008   ; qtot 1.829
+   495 amber94_11     31    LYP     CB    493    -0.0094      12.01   ; qtot 1.82
+   496 amber94_18     31    LYP    HB1    494     0.0362      1.008   ; qtot 1.856
+   497 amber94_18     31    LYP    HB2    495     0.0362      1.008   ; qtot 1.892
+   498 amber94_11     31    LYP     CG    496     0.0187      12.01   ; qtot 1.911
+   499 amber94_18     31    LYP    HG1    497     0.0103      1.008   ; qtot 1.921
+   500 amber94_18     31    LYP    HG2    498     0.0103      1.008   ; qtot 1.932
+   501 amber94_11     31    LYP     CD    499    -0.0479      12.01   ; qtot 1.884
+   502 amber94_18     31    LYP    HD1    500     0.0621      1.008   ; qtot 1.946
+   503 amber94_18     31    LYP    HD2    501     0.0621      1.008   ; qtot 2.008
+   504 amber94_11     31    LYP     CE    502    -0.0143      12.01   ; qtot 1.994
+   505 amber94_28     31    LYP    HE1    503     0.1135      1.008   ; qtot 2.107
+   506 amber94_28     31    LYP    HE2    504     0.1135      1.008   ; qtot 2.221
+   507 amber94_39     31    LYP     NZ    505    -0.3854      14.01   ; qtot 1.835
+   508 amber94_17     31    LYP    HZ1    506       0.34      1.008   ; qtot 2.175
+   509 amber94_17     31    LYP    HZ2    507       0.34      1.008   ; qtot 2.515
+   510 amber94_17     31    LYP    HZ3    508       0.34      1.008   ; qtot 2.855
+   511  amber94_2     31    LYP      C    509     0.7341      12.01   ; qtot 3.589
+   512 amber94_41     31    LYP      O    510    -0.5894         16   ; qtot 3
+   513 amber94_34     32    GLU      N    511    -0.5163      14.01   ; qtot 2.484
+   514 amber94_17     32    GLU      H    512     0.2936      1.008   ; qtot 2.777
+   515 amber94_11     32    GLU     CA    513     0.0397      12.01   ; qtot 2.817
+   516 amber94_19     32    GLU     HA    514     0.1105      1.008   ; qtot 2.928
+   517 amber94_11     32    GLU     CB    515      0.056      12.01   ; qtot 2.984
+   518 amber94_18     32    GLU    HB1    516    -0.0173      1.008   ; qtot 2.966
+   519 amber94_18     32    GLU    HB2    517    -0.0173      1.008   ; qtot 2.949
+   520 amber94_11     32    GLU     CG    518     0.0136      12.01   ; qtot 2.963
+   521 amber94_18     32    GLU    HG1    519    -0.0425      1.008   ; qtot 2.92
+   522 amber94_18     32    GLU    HG2    520    -0.0425      1.008   ; qtot 2.878
+   523  amber94_2     32    GLU     CD    521     0.8054      12.01   ; qtot 3.683
+   524 amber94_45     32    GLU    OE1    522    -0.8188         16   ; qtot 2.864
+   525 amber94_45     32    GLU    OE2    523    -0.8188         16   ; qtot 2.045
+   526  amber94_2     32    GLU      C    524     0.5366      12.01   ; qtot 2.582
+   527 amber94_41     32    GLU      O    525    -0.5819         16   ; qtot 2
+   528 amber94_34     33    LYP      N    526    -0.3479      14.01   ; qtot 1.652
+   529 amber94_17     33    LYP      H    527     0.2747      1.008   ; qtot 1.927
+   530 amber94_11     33    LYP     CA    528      -0.24      12.01   ; qtot 1.687
+   531 amber94_19     33    LYP     HA    529     0.1426      1.008   ; qtot 1.829
+   532 amber94_11     33    LYP     CB    530    -0.0094      12.01   ; qtot 1.82
+   533 amber94_18     33    LYP    HB1    531     0.0362      1.008   ; qtot 1.856
+   534 amber94_18     33    LYP    HB2    532     0.0362      1.008   ; qtot 1.892
+   535 amber94_11     33    LYP     CG    533     0.0187      12.01   ; qtot 1.911
+   536 amber94_18     33    LYP    HG1    534     0.0103      1.008   ; qtot 1.921
+   537 amber94_18     33    LYP    HG2    535     0.0103      1.008   ; qtot 1.932
+   538 amber94_11     33    LYP     CD    536    -0.0479      12.01   ; qtot 1.884
+   539 amber94_18     33    LYP    HD1    537     0.0621      1.008   ; qtot 1.946
+   540 amber94_18     33    LYP    HD2    538     0.0621      1.008   ; qtot 2.008
+   541 amber94_11     33    LYP     CE    539    -0.0143      12.01   ; qtot 1.994
+   542 amber94_28     33    LYP    HE1    540     0.1135      1.008   ; qtot 2.107
+   543 amber94_28     33    LYP    HE2    541     0.1135      1.008   ; qtot 2.221
+   544 amber94_39     33    LYP     NZ    542    -0.3854      14.01   ; qtot 1.835
+   545 amber94_17     33    LYP    HZ1    543       0.34      1.008   ; qtot 2.175
+   546 amber94_17     33    LYP    HZ2    544       0.34      1.008   ; qtot 2.515
+   547 amber94_17     33    LYP    HZ3    545       0.34      1.008   ; qtot 2.855
+   548  amber94_2     33    LYP      C    546     0.7341      12.01   ; qtot 3.589
+   549 amber94_41     33    LYP      O    547    -0.5894         16   ; qtot 3
+   550 amber94_34     34    GLY      N    548    -0.4157      14.01   ; qtot 2.584
+   551 amber94_17     34    GLY      H    549     0.2719      1.008   ; qtot 2.856
+   552 amber94_11     34    GLY     CA    550    -0.0252      12.01   ; qtot 2.831
+   553 amber94_19     34    GLY    HA1    551     0.0698      1.008   ; qtot 2.901
+   554 amber94_19     34    GLY    HA2    552     0.0698      1.008   ; qtot 2.971
+   555  amber94_2     34    GLY      C    553     0.5973      12.01   ; qtot 3.568
+   556 amber94_41     34    GLY      O    554    -0.5679         16   ; qtot 3
+   557 amber94_34     35    LEU      N    555    -0.4157      14.01   ; qtot 2.584
+   558 amber94_17     35    LEU      H    556     0.2719      1.008   ; qtot 2.856
+   559 amber94_11     35    LEU     CA    557    -0.0518      12.01   ; qtot 2.804
+   560 amber94_19     35    LEU     HA    558     0.0922      1.008   ; qtot 2.897
+   561 amber94_11     35    LEU     CB    559    -0.1102      12.01   ; qtot 2.786
+   562 amber94_18     35    LEU    HB1    560     0.0457      1.008   ; qtot 2.832
+   563 amber94_18     35    LEU    HB2    561     0.0457      1.008   ; qtot 2.878
+   564 amber94_11     35    LEU     CG    562     0.3531      12.01   ; qtot 3.231
+   565 amber94_18     35    LEU     HG    563    -0.0361      1.008   ; qtot 3.195
+   566 amber94_11     35    LEU    CD1    564    -0.4121      12.01   ; qtot 2.783
+   567 amber94_18     35    LEU   HD11    565        0.1      1.008   ; qtot 2.883
+   568 amber94_18     35    LEU   HD12    566        0.1      1.008   ; qtot 2.983
+   569 amber94_18     35    LEU   HD13    567        0.1      1.008   ; qtot 3.083
+   570 amber94_11     35    LEU    CD2    568    -0.4121      12.01   ; qtot 2.671
+   571 amber94_18     35    LEU   HD21    569        0.1      1.008   ; qtot 2.771
+   572 amber94_18     35    LEU   HD22    570        0.1      1.008   ; qtot 2.871
+   573 amber94_18     35    LEU   HD23    571        0.1      1.008   ; qtot 2.971
+   574  amber94_2     35    LEU      C    572     0.5973      12.01   ; qtot 3.568
+   575 amber94_41     35    LEU      O    573    -0.5679         16   ; qtot 3
+   576 amber94_34     36   CPHE      N    574    -0.3821      14.01   ; qtot 2.618
+   577 amber94_17     36   CPHE      H    575     0.2681      1.008   ; qtot 2.886
+   578 amber94_11     36   CPHE     CA    576    -0.1825      12.01   ; qtot 2.704
+   579 amber94_19     36   CPHE     HA    577     0.1098      1.008   ; qtot 2.813
+   580 amber94_11     36   CPHE     CB    578    -0.0959      12.01   ; qtot 2.717
+   581 amber94_18     36   CPHE    HB1    579     0.0443      1.008   ; qtot 2.762
+   582 amber94_18     36   CPHE    HB2    580     0.0443      1.008   ; qtot 2.806
+   583  amber94_3     36   CPHE     CG    581     0.0552      12.01   ; qtot 2.861
+   584  amber94_3     36   CPHE    CD1    582      -0.13      12.01   ; qtot 2.731
+   585 amber94_22     36   CPHE    HD1    583     0.1408      1.008   ; qtot 2.872
+   586  amber94_3     36   CPHE    CE1    584    -0.1847      12.01   ; qtot 2.687
+   587 amber94_22     36   CPHE    HE1    585     0.1461      1.008   ; qtot 2.833
+   588  amber94_3     36   CPHE     CZ    586    -0.0944      12.01   ; qtot 2.739
+   589 amber94_22     36   CPHE     HZ    587      0.128      1.008   ; qtot 2.867
+   590  amber94_3     36   CPHE    CE2    588    -0.1847      12.01   ; qtot 2.682
+   591 amber94_22     36   CPHE    HE2    589     0.1461      1.008   ; qtot 2.828
+   592  amber94_3     36   CPHE    CD2    590      -0.13      12.01   ; qtot 2.698
+   593 amber94_22     36   CPHE    HD2    591     0.1408      1.008   ; qtot 2.839
+   594  amber94_2     36   CPHE      C    592      0.766      12.01   ; qtot 3.605
+   595 amber94_45     36   CPHE    OC1    593    -0.8026         16   ; qtot 2.803
+   596 amber94_45     36   CPHE    OC2    594    -0.8026         16   ; qtot 2
+
+[ bonds ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     2     1 
+    1     3     1 
+    1     4     1 
+    1     5     1 
+    5     6     1 
+    5     7     1 
+    5    18     1 
+    7     8     1 
+    7     9     1 
+    7    10     1 
+   10    11     1 
+   10    12     1 
+   10    13     1 
+   13    14     1 
+   14    15     1 
+   14    16     1 
+   14    17     1 
+   18    19     1 
+   18    20     1 
+   20    21     1 
+   20    22     1 
+   22    23     1 
+   22    24     1 
+   22    37     1 
+   24    25     1 
+   24    26     1 
+   24    27     1 
+   27    28     1 
+   27    29     1 
+   27    33     1 
+   29    30     1 
+   29    31     1 
+   29    32     1 
+   33    34     1 
+   33    35     1 
+   33    36     1 
+   37    38     1 
+   37    39     1 
+   39    40     1 
+   39    41     1 
+   41    42     1 
+   41    43     1 
+   41    48     1 
+   43    44     1 
+   43    45     1 
+   43    46     1 
+   46    47     1 
+   48    49     1 
+   48    50     1 
+   50    51     1 
+   50    52     1 
+   52    53     1 
+   52    54     1 
+   52    60     1 
+   54    55     1 
+   54    56     1 
+   54    57     1 
+   57    58     1 
+   57    59     1 
+   60    61     1 
+   60    62     1 
+   62    63     1 
+   62    64     1 
+   64    65     1 
+   64    66     1 
+   64    75     1 
+   66    67     1 
+   66    68     1 
+   66    69     1 
+   69    70     1 
+   69    71     1 
+   69    72     1 
+   72    73     1 
+   72    74     1 
+   75    76     1 
+   75    77     1 
+   77    78     1 
+   77    79     1 
+   79    80     1 
+   79    81     1 
+   79    87     1 
+   81    82     1 
+   81    83     1 
+   81    84     1 
+   84    85     1 
+   84    86     1 
+   87    88     1 
+   87    89     1 
+   89    90     1 
+   89    91     1 
+   91    92     1 
+   91    93     1 
+   91   107     1 
+   93    94     1 
+   93    95     1 
+   93    96     1 
+   96    97     1 
+   96   105     1 
+   97    98     1 
+   97    99     1 
+   99   100     1 
+   99   101     1 
+  101   102     1 
+  101   103     1 
+  103   104     1 
+  103   105     1 
+  105   106     1 
+  107   108     1 
+  107   109     1 
+  109   110     1 
+  109   111     1 
+  111   112     1 
+  111   113     1 
+  111   129     1 
+  113   114     1 
+  113   115     1 
+  113   116     1 
+  116   117     1 
+  116   118     1 
+  116   119     1 
+  119   120     1 
+  119   121     1 
+  119   122     1 
+  122   123     1 
+  122   124     1 
+  122   125     1 
+  125   126     1 
+  125   127     1 
+  125   128     1 
+  129   130     1 
+  129   131     1 
+  131   132     1 
+  131   133     1 
+  133   134     1 
+  133   135     1 
+  133   139     1 
+  135   136     1 
+  135   137     1 
+  135   138     1 
+  139   140     1 
+  139   141     1 
+  141   142     1 
+  141   143     1 
+  143   144     1 
+  143   145     1 
+  143   155     1 
+  145   146     1 
+  145   147     1 
+  145   151     1 
+  147   148     1 
+  147   149     1 
+  147   150     1 
+  151   152     1 
+  151   153     1 
+  151   154     1 
+  155   156     1 
+  155   157     1 
+  157   158     1 
+  157   159     1 
+  159   160     1 
+  159   161     1 
+  159   175     1 
+  161   162     1 
+  161   163     1 
+  161   164     1 
+  164   165     1 
+  164   173     1 
+  165   166     1 
+  165   167     1 
+  167   168     1 
+  167   169     1 
+  169   170     1 
+  169   171     1 
+  171   172     1 
+  171   173     1 
+  173   174     1 
+  175   176     1 
+  175   177     1 
+  177   178     1 
+  177   179     1 
+  179   180     1 
+  179   181     1 
+  179   182     1 
+  182   183     1 
+  182   184     1 
+  184   185     1 
+  184   186     1 
+  186   187     1 
+  186   188     1 
+  186   199     1 
+  188   189     1 
+  188   190     1 
+  188   191     1 
+  191   192     1 
+  191   193     1 
+  191   194     1 
+  194   195     1 
+  195   196     1 
+  195   197     1 
+  195   198     1 
+  199   200     1 
+  199   201     1 
+  201   202     1 
+  201   203     1 
+  203   204     1 
+  203   205     1 
+  203   213     1 
+  205   206     1 
+  205   207     1 
+  205   211     1 
+  207   208     1 
+  207   209     1 
+  207   210     1 
+  211   212     1 
+  213   214     1 
+  213   215     1 
+  215   216     1 
+  215   217     1 
+  217   218     1 
+  217   219     1 
+  217   237     1 
+  219   220     1 
+  219   221     1 
+  219   222     1 
+  222   223     1 
+  222   224     1 
+  222   225     1 
+  225   226     1 
+  225   227     1 
+  225   228     1 
+  228   229     1 
+  228   230     1 
+  230   231     1 
+  230   234     1 
+  231   232     1 
+  231   233     1 
+  234   235     1 
+  234   236     1 
+  237   238     1 
+  237   239     1 
+  239   240     1 
+  239   241     1 
+  241   242     1 
+  241   243     1 
+  241   248     1 
+  243   244     1 
+  243   245     1 
+  243   246     1 
+  246   247     1 
+  248   249     1 
+  248   250     1 
+  250   251     1 
+  250   252     1 
+  252   253     1 
+  252   254     1 
+  252   258     1 
+  254   255     1 
+  254   256     1 
+  254   257     1 
+  258   259     1 
+  258   260     1 
+  260   261     1 
+  260   262     1 
+  262   263     1 
+  262   264     1 
+  262   278     1 
+  264   265     1 
+  264   266     1 
+  264   267     1 
+  267   268     1 
+  267   276     1 
+  268   269     1 
+  268   270     1 
+  270   271     1 
+  270   272     1 
+  272   273     1 
+  272   274     1 
+  274   275     1 
+  274   276     1 
+  276   277     1 
+  278   279     1 
+  278   280     1 
+  280   281     1 
+  280   282     1 
+  282   283     1 
+  282   284     1 
+  282   288     1 
+  284   285     1 
+  284   286     1 
+  284   287     1 
+  288   289     1 
+  288   290     1 
+  290   291     1 
+  290   292     1 
+  292   293     1 
+  292   294     1 
+  292   302     1 
+  294   295     1 
+  294   296     1 
+  294   297     1 
+  297   298     1 
+  297   299     1 
+  299   300     1 
+  299   301     1 
+  302   303     1 
+  302   304     1 
+  304   305     1 
+  304   306     1 
+  306   307     1 
+  306   308     1 
+  306   321     1 
+  308   309     1 
+  308   310     1 
+  308   311     1 
+  311   312     1 
+  311   313     1 
+  311   317     1 
+  313   314     1 
+  313   315     1 
+  313   316     1 
+  317   318     1 
+  317   319     1 
+  317   320     1 
+  321   322     1 
+  321   323     1 
+  323   324     1 
+  323   333     1 
+  324   325     1 
+  324   326     1 
+  324   327     1 
+  327   328     1 
+  327   329     1 
+  327   330     1 
+  330   331     1 
+  330   332     1 
+  330   333     1 
+  333   334     1 
+  333   335     1 
+  335   336     1 
+  335   337     1 
+  337   338     1 
+  337   339     1 
+  339   340     1 
+  339   341     1 
+  339   354     1 
+  341   342     1 
+  341   343     1 
+  341   344     1 
+  344   345     1 
+  344   346     1 
+  344   350     1 
+  346   347     1 
+  346   348     1 
+  346   349     1 
+  350   351     1 
+  350   352     1 
+  350   353     1 
+  354   355     1 
+  354   356     1 
+  356   357     1 
+  356   358     1 
+  358   359     1 
+  358   360     1 
+  358   378     1 
+  360   361     1 
+  360   362     1 
+  360   363     1 
+  363   364     1 
+  363   377     1 
+  364   365     1 
+  364   366     1 
+  366   367     1 
+  366   368     1 
+  368   369     1 
+  368   377     1 
+  369   370     1 
+  369   371     1 
+  371   372     1 
+  371   373     1 
+  373   374     1 
+  373   375     1 
+  375   376     1 
+  375   377     1 
+  378   379     1 
+  378   380     1 
+  380   381     1 
+  380   382     1 
+  382   383     1 
+  382   384     1 
+  382   400     1 
+  384   385     1 
+  384   386     1 
+  384   387     1 
+  387   388     1 
+  387   389     1 
+  387   390     1 
+  390   391     1 
+  390   392     1 
+  390   393     1 
+  393   394     1 
+  393   395     1 
+  393   396     1 
+  396   397     1 
+  396   398     1 
+  396   399     1 
+  400   401     1 
+  400   402     1 
+  402   403     1 
+  402   404     1 
+  404   405     1 
+  404   406     1 
+  404   417     1 
+  406   407     1 
+  406   408     1 
+  406   409     1 
+  409   410     1 
+  409   411     1 
+  409   412     1 
+  412   413     1 
+  412   414     1 
+  414   415     1 
+  414   416     1 
+  417   418     1 
+  417   419     1 
+  419   420     1 
+  419   421     1 
+  421   422     1 
+  421   423     1 
+  421   434     1 
+  423   424     1 
+  423   425     1 
+  423   426     1 
+  426   427     1 
+  426   428     1 
+  426   429     1 
+  429   430     1 
+  429   431     1 
+  431   432     1 
+  431   433     1 
+  434   435     1 
+  434   436     1 
+  436   437     1 
+  436   438     1 
+  438   439     1 
+  438   440     1 
+  438   448     1 
+  440   441     1 
+  440   442     1 
+  440   443     1 
+  443   444     1 
+  443   445     1 
+  445   446     1 
+  445   447     1 
+  448   449     1 
+  448   450     1 
+  450   451     1 
+  450   452     1 
+  452   453     1 
+  452   454     1 
+  452   467     1 
+  454   455     1 
+  454   456     1 
+  454   457     1 
+  457   458     1 
+  457   459     1 
+  457   463     1 
+  459   460     1 
+  459   461     1 
+  459   462     1 
+  463   464     1 
+  463   465     1 
+  463   466     1 
+  467   468     1 
+  467   469     1 
+  469   470     1 
+  469   471     1 
+  471   472     1 
+  471   473     1 
+  471   489     1 
+  473   474     1 
+  473   475     1 
+  473   476     1 
+  476   477     1 
+  476   478     1 
+  476   479     1 
+  479   480     1 
+  479   481     1 
+  479   482     1 
+  482   483     1 
+  482   484     1 
+  482   485     1 
+  485   486     1 
+  485   487     1 
+  485   488     1 
+  489   490     1 
+  489   491     1 
+  491   492     1 
+  491   493     1 
+  493   494     1 
+  493   495     1 
+  493   511     1 
+  495   496     1 
+  495   497     1 
+  495   498     1 
+  498   499     1 
+  498   500     1 
+  498   501     1 
+  501   502     1 
+  501   503     1 
+  501   504     1 
+  504   505     1 
+  504   506     1 
+  504   507     1 
+  507   508     1 
+  507   509     1 
+  507   510     1 
+  511   512     1 
+  511   513     1 
+  513   514     1 
+  513   515     1 
+  515   516     1 
+  515   517     1 
+  515   526     1 
+  517   518     1 
+  517   519     1 
+  517   520     1 
+  520   521     1 
+  520   522     1 
+  520   523     1 
+  523   524     1 
+  523   525     1 
+  526   527     1 
+  526   528     1 
+  528   529     1 
+  528   530     1 
+  530   531     1 
+  530   532     1 
+  530   548     1 
+  532   533     1 
+  532   534     1 
+  532   535     1 
+  535   536     1 
+  535   537     1 
+  535   538     1 
+  538   539     1 
+  538   540     1 
+  538   541     1 
+  541   542     1 
+  541   543     1 
+  541   544     1 
+  544   545     1 
+  544   546     1 
+  544   547     1 
+  548   549     1 
+  548   550     1 
+  550   551     1 
+  550   552     1 
+  552   553     1 
+  552   554     1 
+  552   555     1 
+  555   556     1 
+  555   557     1 
+  557   558     1 
+  557   559     1 
+  559   560     1 
+  559   561     1 
+  559   574     1 
+  561   562     1 
+  561   563     1 
+  561   564     1 
+  564   565     1 
+  564   566     1 
+  564   570     1 
+  566   567     1 
+  566   568     1 
+  566   569     1 
+  570   571     1 
+  570   572     1 
+  570   573     1 
+  574   575     1 
+  574   576     1 
+  576   577     1 
+  576   578     1 
+  578   579     1 
+  578   580     1 
+  578   594     1 
+  580   581     1 
+  580   582     1 
+  580   583     1 
+  583   584     1 
+  583   592     1 
+  584   585     1 
+  584   586     1 
+  586   587     1 
+  586   588     1 
+  588   589     1 
+  588   590     1 
+  590   591     1 
+  590   592     1 
+  592   593     1 
+  594   595     1 
+  594   596     1 
+
+[ pairs ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     8     1 
+    1     9     1 
+    1    10     1 
+    1    19     1 
+    1    20     1 
+    2     6     1 
+    2     7     1 
+    2    18     1 
+    3     6     1 
+    3     7     1 
+    3    18     1 
+    4     6     1 
+    4     7     1 
+    4    18     1 
+    5    11     1 
+    5    12     1 
+    5    13     1 
+    5    21     1 
+    5    22     1 
+    6     8     1 
+    6     9     1 
+    6    10     1 
+    6    19     1 
+    6    20     1 
+    7    14     1 
+    7    19     1 
+    7    20     1 
+    8    11     1 
+    8    12     1 
+    8    13     1 
+    8    18     1 
+    9    11     1 
+    9    12     1 
+    9    13     1 
+    9    18     1 
+   10    15     1 
+   10    16     1 
+   10    17     1 
+   10    18     1 
+   11    14     1 
+   12    14     1 
+   18    23     1 
+   18    24     1 
+   18    37     1 
+   19    21     1 
+   19    22     1 
+   20    25     1 
+   20    26     1 
+   20    27     1 
+   20    38     1 
+   20    39     1 
+   21    23     1 
+   21    24     1 
+   21    37     1 
+   22    28     1 
+   22    29     1 
+   22    33     1 
+   22    40     1 
+   22    41     1 
+   23    25     1 
+   23    26     1 
+   23    27     1 
+   23    38     1 
+   23    39     1 
+   24    30     1 
+   24    31     1 
+   24    32     1 
+   24    34     1 
+   24    35     1 
+   24    36     1 
+   24    38     1 
+   24    39     1 
+   25    28     1 
+   25    29     1 
+   25    33     1 
+   25    37     1 
+   26    28     1 
+   26    29     1 
+   26    33     1 
+   26    37     1 
+   27    37     1 
+   28    30     1 
+   28    31     1 
+   28    32     1 
+   28    34     1 
+   28    35     1 
+   28    36     1 
+   29    34     1 
+   29    35     1 
+   29    36     1 
+   30    33     1 
+   31    33     1 
+   32    33     1 
+   37    42     1 
+   37    43     1 
+   37    48     1 
+   38    40     1 
+   38    41     1 
+   39    44     1 
+   39    45     1 
+   39    46     1 
+   39    49     1 
+   39    50     1 
+   40    42     1 
+   40    43     1 
+   40    48     1 
+   41    47     1 
+   41    51     1 
+   41    52     1 
+   42    44     1 
+   42    45     1 
+   42    46     1 
+   42    49     1 
+   42    50     1 
+   43    49     1 
+   43    50     1 
+   44    47     1 
+   44    48     1 
+   45    47     1 
+   45    48     1 
+   46    48     1 
+   48    53     1 
+   48    54     1 
+   48    60     1 
+   49    51     1 
+   49    52     1 
+   50    55     1 
+   50    56     1 
+   50    57     1 
+   50    61     1 
+   50    62     1 
+   51    53     1 
+   51    54     1 
+   51    60     1 
+   52    58     1 
+   52    59     1 
+   52    63     1 
+   52    64     1 
+   53    55     1 
+   53    56     1 
+   53    57     1 
+   53    61     1 
+   53    62     1 
+   54    61     1 
+   54    62     1 
+   55    58     1 
+   55    59     1 
+   55    60     1 
+   56    58     1 
+   56    59     1 
+   56    60     1 
+   57    60     1 
+   60    65     1 
+   60    66     1 
+   60    75     1 
+   61    63     1 
+   61    64     1 
+   62    67     1 
+   62    68     1 
+   62    69     1 
+   62    76     1 
+   62    77     1 
+   63    65     1 
+   63    66     1 
+   63    75     1 
+   64    70     1 
+   64    71     1 
+   64    72     1 
+   64    78     1 
+   64    79     1 
+   65    67     1 
+   65    68     1 
+   65    69     1 
+   65    76     1 
+   65    77     1 
+   66    73     1 
+   66    74     1 
+   66    76     1 
+   66    77     1 
+   67    70     1 
+   67    71     1 
+   67    72     1 
+   67    75     1 
+   68    70     1 
+   68    71     1 
+   68    72     1 
+   68    75     1 
+   69    75     1 
+   70    73     1 
+   70    74     1 
+   71    73     1 
+   71    74     1 
+   75    80     1 
+   75    81     1 
+   75    87     1 
+   76    78     1 
+   76    79     1 
+   77    82     1 
+   77    83     1 
+   77    84     1 
+   77    88     1 
+   77    89     1 
+   78    80     1 
+   78    81     1 
+   78    87     1 
+   79    85     1 
+   79    86     1 
+   79    90     1 
+   79    91     1 
+   80    82     1 
+   80    83     1 
+   80    84     1 
+   80    88     1 
+   80    89     1 
+   81    88     1 
+   81    89     1 
+   82    85     1 
+   82    86     1 
+   82    87     1 
+   83    85     1 
+   83    86     1 
+   83    87     1 
+   84    87     1 
+   87    92     1 
+   87    93     1 
+   87   107     1 
+   88    90     1 
+   88    91     1 
+   89    94     1 
+   89    95     1 
+   89    96     1 
+   89   108     1 
+   89   109     1 
+   90    92     1 
+   90    93     1 
+   90   107     1 
+   91    97     1 
+   91   105     1 
+   91   110     1 
+   91   111     1 
+   92    94     1 
+   92    95     1 
+   92    96     1 
+   92   108     1 
+   92   109     1 
+   93    98     1 
+   93    99     1 
+   93   103     1 
+   93   106     1 
+   93   108     1 
+   93   109     1 
+   94    97     1 
+   94   105     1 
+   94   107     1 
+   95    97     1 
+   95   105     1 
+   95   107     1 
+   96   100     1 
+   96   101     1 
+   96   104     1 
+   96   107     1 
+   97   102     1 
+   97   103     1 
+   97   106     1 
+   98   100     1 
+   98   101     1 
+   98   105     1 
+   99   104     1 
+   99   105     1 
+  100   102     1 
+  100   103     1 
+  101   106     1 
+  102   104     1 
+  102   105     1 
+  104   106     1 
+  107   112     1 
+  107   113     1 
+  107   129     1 
+  108   110     1 
+  108   111     1 
+  109   114     1 
+  109   115     1 
+  109   116     1 
+  109   130     1 
+  109   131     1 
+  110   112     1 
+  110   113     1 
+  110   129     1 
+  111   117     1 
+  111   118     1 
+  111   119     1 
+  111   132     1 
+  111   133     1 
+  112   114     1 
+  112   115     1 
+  112   116     1 
+  112   130     1 
+  112   131     1 
+  113   120     1 
+  113   121     1 
+  113   122     1 
+  113   130     1 
+  113   131     1 
+  114   117     1 
+  114   118     1 
+  114   119     1 
+  114   129     1 
+  115   117     1 
+  115   118     1 
+  115   119     1 
+  115   129     1 
+  116   123     1 
+  116   124     1 
+  116   125     1 
+  116   129     1 
+  117   120     1 
+  117   121     1 
+  117   122     1 
+  118   120     1 
+  118   121     1 
+  118   122     1 
+  119   126     1 
+  119   127     1 
+  119   128     1 
+  120   123     1 
+  120   124     1 
+  120   125     1 
+  121   123     1 
+  121   124     1 
+  121   125     1 
+  123   126     1 
+  123   127     1 
+  123   128     1 
+  124   126     1 
+  124   127     1 
+  124   128     1 
+  129   134     1 
+  129   135     1 
+  129   139     1 
+  130   132     1 
+  130   133     1 
+  131   136     1 
+  131   137     1 
+  131   138     1 
+  131   140     1 
+  131   141     1 
+  132   134     1 
+  132   135     1 
+  132   139     1 
+  133   142     1 
+  133   143     1 
+  134   136     1 
+  134   137     1 
+  134   138     1 
+  134   140     1 
+  134   141     1 
+  135   140     1 
+  135   141     1 
+  136   139     1 
+  137   139     1 
+  138   139     1 
+  139   144     1 
+  139   145     1 
+  139   155     1 
+  140   142     1 
+  140   143     1 
+  141   146     1 
+  141   147     1 
+  141   151     1 
+  141   156     1 
+  141   157     1 
+  142   144     1 
+  142   145     1 
+  142   155     1 
+  143   148     1 
+  143   149     1 
+  143   150     1 
+  143   152     1 
+  143   153     1 
+  143   154     1 
+  143   158     1 
+  143   159     1 
+  144   146     1 
+  144   147     1 
+  144   151     1 
+  144   156     1 
+  144   157     1 
+  145   156     1 
+  145   157     1 
+  146   148     1 
+  146   149     1 
+  146   150     1 
+  146   152     1 
+  146   153     1 
+  146   154     1 
+  146   155     1 
+  147   152     1 
+  147   153     1 
+  147   154     1 
+  147   155     1 
+  148   151     1 
+  149   151     1 
+  150   151     1 
+  151   155     1 
+  155   160     1 
+  155   161     1 
+  155   175     1 
+  156   158     1 
+  156   159     1 
+  157   162     1 
+  157   163     1 
+  157   164     1 
+  157   176     1 
+  157   177     1 
+  158   160     1 
+  158   161     1 
+  158   175     1 
+  159   165     1 
+  159   173     1 
+  159   178     1 
+  159   179     1 
+  160   162     1 
+  160   163     1 
+  160   164     1 
+  160   176     1 
+  160   177     1 
+  161   166     1 
+  161   167     1 
+  161   171     1 
+  161   174     1 
+  161   176     1 
+  161   177     1 
+  162   165     1 
+  162   173     1 
+  162   175     1 
+  163   165     1 
+  163   173     1 
+  163   175     1 
+  164   168     1 
+  164   169     1 
+  164   172     1 
+  164   175     1 
+  165   170     1 
+  165   171     1 
+  165   174     1 
+  166   168     1 
+  166   169     1 
+  166   173     1 
+  167   172     1 
+  167   173     1 
+  168   170     1 
+  168   171     1 
+  169   174     1 
+  170   172     1 
+  170   173     1 
+  172   174     1 
+  175   180     1 
+  175   181     1 
+  175   182     1 
+  176   178     1 
+  176   179     1 
+  177   183     1 
+  177   184     1 
+  178   180     1 
+  178   181     1 
+  178   182     1 
+  179   185     1 
+  179   186     1 
+  180   183     1 
+  180   184     1 
+  181   183     1 
+  181   184     1 
+  182   187     1 
+  182   188     1 
+  182   199     1 
+  183   185     1 
+  183   186     1 
+  184   189     1 
+  184   190     1 
+  184   191     1 
+  184   200     1 
+  184   201     1 
+  185   187     1 
+  185   188     1 
+  185   199     1 
+  186   192     1 
+  186   193     1 
+  186   194     1 
+  186   202     1 
+  186   203     1 
+  187   189     1 
+  187   190     1 
+  187   191     1 
+  187   200     1 
+  187   201     1 
+  188   195     1 
+  188   200     1 
+  188   201     1 
+  189   192     1 
+  189   193     1 
+  189   194     1 
+  189   199     1 
+  190   192     1 
+  190   193     1 
+  190   194     1 
+  190   199     1 
+  191   196     1 
+  191   197     1 
+  191   198     1 
+  191   199     1 
+  192   195     1 
+  193   195     1 
+  199   204     1 
+  199   205     1 
+  199   213     1 
+  200   202     1 
+  200   203     1 
+  201   206     1 
+  201   207     1 
+  201   211     1 
+  201   214     1 
+  201   215     1 
+  202   204     1 
+  202   205     1 
+  202   213     1 
+  203   208     1 
+  203   209     1 
+  203   210     1 
+  203   212     1 
+  203   216     1 
+  203   217     1 
+  204   206     1 
+  204   207     1 
+  204   211     1 
+  204   214     1 
+  204   215     1 
+  205   214     1 
+  205   215     1 
+  206   208     1 
+  206   209     1 
+  206   210     1 
+  206   212     1 
+  206   213     1 
+  207   212     1 
+  207   213     1 
+  208   211     1 
+  209   211     1 
+  210   211     1 
+  211   213     1 
+  213   218     1 
+  213   219     1 
+  213   237     1 
+  214   216     1 
+  214   217     1 
+  215   220     1 
+  215   221     1 
+  215   222     1 
+  215   238     1 
+  215   239     1 
+  216   218     1 
+  216   219     1 
+  216   237     1 
+  217   223     1 
+  217   224     1 
+  217   225     1 
+  217   240     1 
+  217   241     1 
+  218   220     1 
+  218   221     1 
+  218   222     1 
+  218   238     1 
+  218   239     1 
+  219   226     1 
+  219   227     1 
+  219   228     1 
+  219   238     1 
+  219   239     1 
+  220   223     1 
+  220   224     1 
+  220   225     1 
+  220   237     1 
+  221   223     1 
+  221   224     1 
+  221   225     1 
+  221   237     1 
+  222   229     1 
+  222   230     1 
+  222   237     1 
+  223   226     1 
+  223   227     1 
+  223   228     1 
+  224   226     1 
+  224   227     1 
+  224   228     1 
+  225   231     1 
+  225   234     1 
+  226   229     1 
+  226   230     1 
+  227   229     1 
+  227   230     1 
+  228   232     1 
+  228   233     1 
+  228   235     1 
+  228   236     1 
+  229   231     1 
+  229   234     1 
+  231   235     1 
+  231   236     1 
+  232   234     1 
+  233   234     1 
+  237   242     1 
+  237   243     1 
+  237   248     1 
+  238   240     1 
+  238   241     1 
+  239   244     1 
+  239   245     1 
+  239   246     1 
+  239   249     1 
+  239   250     1 
+  240   242     1 
+  240   243     1 
+  240   248     1 
+  241   247     1 
+  241   251     1 
+  241   252     1 
+  242   244     1 
+  242   245     1 
+  242   246     1 
+  242   249     1 
+  242   250     1 
+  243   249     1 
+  243   250     1 
+  244   247     1 
+  244   248     1 
+  245   247     1 
+  245   248     1 
+  246   248     1 
+  248   253     1 
+  248   254     1 
+  248   258     1 
+  249   251     1 
+  249   252     1 
+  250   255     1 
+  250   256     1 
+  250   257     1 
+  250   259     1 
+  250   260     1 
+  251   253     1 
+  251   254     1 
+  251   258     1 
+  252   261     1 
+  252   262     1 
+  253   255     1 
+  253   256     1 
+  253   257     1 
+  253   259     1 
+  253   260     1 
+  254   259     1 
+  254   260     1 
+  255   258     1 
+  256   258     1 
+  257   258     1 
+  258   263     1 
+  258   264     1 
+  258   278     1 
+  259   261     1 
+  259   262     1 
+  260   265     1 
+  260   266     1 
+  260   267     1 
+  260   279     1 
+  260   280     1 
+  261   263     1 
+  261   264     1 
+  261   278     1 
+  262   268     1 
+  262   276     1 
+  262   281     1 
+  262   282     1 
+  263   265     1 
+  263   266     1 
+  263   267     1 
+  263   279     1 
+  263   280     1 
+  264   269     1 
+  264   270     1 
+  264   274     1 
+  264   277     1 
+  264   279     1 
+  264   280     1 
+  265   268     1 
+  265   276     1 
+  265   278     1 
+  266   268     1 
+  266   276     1 
+  266   278     1 
+  267   271     1 
+  267   272     1 
+  267   275     1 
+  267   278     1 
+  268   273     1 
+  268   274     1 
+  268   277     1 
+  269   271     1 
+  269   272     1 
+  269   276     1 
+  270   275     1 
+  270   276     1 
+  271   273     1 
+  271   274     1 
+  272   277     1 
+  273   275     1 
+  273   276     1 
+  275   277     1 
+  278   283     1 
+  278   284     1 
+  278   288     1 
+  279   281     1 
+  279   282     1 
+  280   285     1 
+  280   286     1 
+  280   287     1 
+  280   289     1 
+  280   290     1 
+  281   283     1 
+  281   284     1 
+  281   288     1 
+  282   291     1 
+  282   292     1 
+  283   285     1 
+  283   286     1 
+  283   287     1 
+  283   289     1 
+  283   290     1 
+  284   289     1 
+  284   290     1 
+  285   288     1 
+  286   288     1 
+  287   288     1 
+  288   293     1 
+  288   294     1 
+  288   302     1 
+  289   291     1 
+  289   292     1 
+  290   295     1 
+  290   296     1 
+  290   297     1 
+  290   303     1 
+  290   304     1 
+  291   293     1 
+  291   294     1 
+  291   302     1 
+  292   298     1 
+  292   299     1 
+  292   305     1 
+  292   306     1 
+  293   295     1 
+  293   296     1 
+  293   297     1 
+  293   303     1 
+  293   304     1 
+  294   300     1 
+  294   301     1 
+  294   303     1 
+  294   304     1 
+  295   298     1 
+  295   299     1 
+  295   302     1 
+  296   298     1 
+  296   299     1 
+  296   302     1 
+  297   302     1 
+  298   300     1 
+  298   301     1 
+  302   307     1 
+  302   308     1 
+  302   321     1 
+  303   305     1 
+  303   306     1 
+  304   309     1 
+  304   310     1 
+  304   311     1 
+  304   322     1 
+  304   323     1 
+  305   307     1 
+  305   308     1 
+  305   321     1 
+  306   312     1 
+  306   313     1 
+  306   317     1 
+  306   324     1 
+  306   333     1 
+  307   309     1 
+  307   310     1 
+  307   311     1 
+  307   322     1 
+  307   323     1 
+  308   314     1 
+  308   315     1 
+  308   316     1 
+  308   318     1 
+  308   319     1 
+  308   320     1 
+  308   322     1 
+  308   323     1 
+  309   312     1 
+  309   313     1 
+  309   317     1 
+  309   321     1 
+  310   312     1 
+  310   313     1 
+  310   317     1 
+  310   321     1 
+  311   321     1 
+  312   314     1 
+  312   315     1 
+  312   316     1 
+  312   318     1 
+  312   319     1 
+  312   320     1 
+  313   318     1 
+  313   319     1 
+  313   320     1 
+  314   317     1 
+  315   317     1 
+  316   317     1 
+  321   325     1 
+  321   326     1 
+  321   327     1 
+  321   330     1 
+  321   334     1 
+  321   335     1 
+  322   324     1 
+  322   333     1 
+  323   328     1 
+  323   329     1 
+  323   331     1 
+  323   332     1 
+  323   336     1 
+  323   337     1 
+  324   331     1 
+  324   332     1 
+  324   334     1 
+  324   335     1 
+  325   328     1 
+  325   329     1 
+  325   330     1 
+  325   333     1 
+  326   328     1 
+  326   329     1 
+  326   330     1 
+  326   333     1 
+  327   334     1 
+  327   335     1 
+  328   331     1 
+  328   332     1 
+  328   333     1 
+  329   331     1 
+  329   332     1 
+  329   333     1 
+  330   336     1 
+  330   337     1 
+  331   334     1 
+  331   335     1 
+  332   334     1 
+  332   335     1 
+  333   338     1 
+  333   339     1 
+  334   336     1 
+  334   337     1 
+  335   340     1 
+  335   341     1 
+  335   354     1 
+  336   338     1 
+  336   339     1 
+  337   342     1 
+  337   343     1 
+  337   344     1 
+  337   355     1 
+  337   356     1 
+  338   340     1 
+  338   341     1 
+  338   354     1 
+  339   345     1 
+  339   346     1 
+  339   350     1 
+  339   357     1 
+  339   358     1 
+  340   342     1 
+  340   343     1 
+  340   344     1 
+  340   355     1 
+  340   356     1 
+  341   347     1 
+  341   348     1 
+  341   349     1 
+  341   351     1 
+  341   352     1 
+  341   353     1 
+  341   355     1 
+  341   356     1 
+  342   345     1 
+  342   346     1 
+  342   350     1 
+  342   354     1 
+  343   345     1 
+  343   346     1 
+  343   350     1 
+  343   354     1 
+  344   354     1 
+  345   347     1 
+  345   348     1 
+  345   349     1 
+  345   351     1 
+  345   352     1 
+  345   353     1 
+  346   351     1 
+  346   352     1 
+  346   353     1 
+  347   350     1 
+  348   350     1 
+  349   350     1 
+  354   359     1 
+  354   360     1 
+  354   378     1 
+  355   357     1 
+  355   358     1 
+  356   361     1 
+  356   362     1 
+  356   363     1 
+  356   379     1 
+  356   380     1 
+  357   359     1 
+  357   360     1 
+  357   378     1 
+  358   364     1 
+  358   377     1 
+  358   381     1 
+  358   382     1 
+  359   361     1 
+  359   362     1 
+  359   363     1 
+  359   379     1 
+  359   380     1 
+  360   365     1 
+  360   366     1 
+  360   368     1 
+  360   375     1 
+  360   379     1 
+  360   380     1 
+  361   364     1 
+  361   377     1 
+  361   378     1 
+  362   364     1 
+  362   377     1 
+  362   378     1 
+  363   367     1 
+  363   369     1 
+  363   373     1 
+  363   376     1 
+  363   378     1 
+  364   369     1 
+  364   375     1 
+  365   367     1 
+  365   368     1 
+  365   377     1 
+  366   370     1 
+  366   371     1 
+  366   375     1 
+  367   369     1 
+  367   377     1 
+  368   372     1 
+  368   373     1 
+  368   376     1 
+  369   374     1 
+  369   375     1 
+  370   372     1 
+  370   373     1 
+  370   377     1 
+  371   376     1 
+  371   377     1 
+  372   374     1 
+  372   375     1 
+  374   376     1 
+  374   377     1 
+  378   383     1 
+  378   384     1 
+  378   400     1 
+  379   381     1 
+  379   382     1 
+  380   385     1 
+  380   386     1 
+  380   387     1 
+  380   401     1 
+  380   402     1 
+  381   383     1 
+  381   384     1 
+  381   400     1 
+  382   388     1 
+  382   389     1 
+  382   390     1 
+  382   403     1 
+  382   404     1 
+  383   385     1 
+  383   386     1 
+  383   387     1 
+  383   401     1 
+  383   402     1 
+  384   391     1 
+  384   392     1 
+  384   393     1 
+  384   401     1 
+  384   402     1 
+  385   388     1 
+  385   389     1 
+  385   390     1 
+  385   400     1 
+  386   388     1 
+  386   389     1 
+  386   390     1 
+  386   400     1 
+  387   394     1 
+  387   395     1 
+  387   396     1 
+  387   400     1 
+  388   391     1 
+  388   392     1 
+  388   393     1 
+  389   391     1 
+  389   392     1 
+  389   393     1 
+  390   397     1 
+  390   398     1 
+  390   399     1 
+  391   394     1 
+  391   395     1 
+  391   396     1 
+  392   394     1 
+  392   395     1 
+  392   396     1 
+  394   397     1 
+  394   398     1 
+  394   399     1 
+  395   397     1 
+  395   398     1 
+  395   399     1 
+  400   405     1 
+  400   406     1 
+  400   417     1 
+  401   403     1 
+  401   404     1 
+  402   407     1 
+  402   408     1 
+  402   409     1 
+  402   418     1 
+  402   419     1 
+  403   405     1 
+  403   406     1 
+  403   417     1 
+  404   410     1 
+  404   411     1 
+  404   412     1 
+  404   420     1 
+  404   421     1 
+  405   407     1 
+  405   408     1 
+  405   409     1 
+  405   418     1 
+  405   419     1 
+  406   413     1 
+  406   414     1 
+  406   418     1 
+  406   419     1 
+  407   410     1 
+  407   411     1 
+  407   412     1 
+  407   417     1 
+  408   410     1 
+  408   411     1 
+  408   412     1 
+  408   417     1 
+  409   415     1 
+  409   416     1 
+  409   417     1 
+  410   413     1 
+  410   414     1 
+  411   413     1 
+  411   414     1 
+  413   415     1 
+  413   416     1 
+  417   422     1 
+  417   423     1 
+  417   434     1 
+  418   420     1 
+  418   421     1 
+  419   424     1 
+  419   425     1 
+  419   426     1 
+  419   435     1 
+  419   436     1 
+  420   422     1 
+  420   423     1 
+  420   434     1 
+  421   427     1 
+  421   428     1 
+  421   429     1 
+  421   437     1 
+  421   438     1 
+  422   424     1 
+  422   425     1 
+  422   426     1 
+  422   435     1 
+  422   436     1 
+  423   430     1 
+  423   431     1 
+  423   435     1 
+  423   436     1 
+  424   427     1 
+  424   428     1 
+  424   429     1 
+  424   434     1 
+  425   427     1 
+  425   428     1 
+  425   429     1 
+  425   434     1 
+  426   432     1 
+  426   433     1 
+  426   434     1 
+  427   430     1 
+  427   431     1 
+  428   430     1 
+  428   431     1 
+  430   432     1 
+  430   433     1 
+  434   439     1 
+  434   440     1 
+  434   448     1 
+  435   437     1 
+  435   438     1 
+  436   441     1 
+  436   442     1 
+  436   443     1 
+  436   449     1 
+  436   450     1 
+  437   439     1 
+  437   440     1 
+  437   448     1 
+  438   444     1 
+  438   445     1 
+  438   451     1 
+  438   452     1 
+  439   441     1 
+  439   442     1 
+  439   443     1 
+  439   449     1 
+  439   450     1 
+  440   446     1 
+  440   447     1 
+  440   449     1 
+  440   450     1 
+  441   444     1 
+  441   445     1 
+  441   448     1 
+  442   444     1 
+  442   445     1 
+  442   448     1 
+  443   448     1 
+  444   446     1 
+  444   447     1 
+  448   453     1 
+  448   454     1 
+  448   467     1 
+  449   451     1 
+  449   452     1 
+  450   455     1 
+  450   456     1 
+  450   457     1 
+  450   468     1 
+  450   469     1 
+  451   453     1 
+  451   454     1 
+  451   467     1 
+  452   458     1 
+  452   459     1 
+  452   463     1 
+  452   470     1 
+  452   471     1 
+  453   455     1 
+  453   456     1 
+  453   457     1 
+  453   468     1 
+  453   469     1 
+  454   460     1 
+  454   461     1 
+  454   462     1 
+  454   464     1 
+  454   465     1 
+  454   466     1 
+  454   468     1 
+  454   469     1 
+  455   458     1 
+  455   459     1 
+  455   463     1 
+  455   467     1 
+  456   458     1 
+  456   459     1 
+  456   463     1 
+  456   467     1 
+  457   467     1 
+  458   460     1 
+  458   461     1 
+  458   462     1 
+  458   464     1 
+  458   465     1 
+  458   466     1 
+  459   464     1 
+  459   465     1 
+  459   466     1 
+  460   463     1 
+  461   463     1 
+  462   463     1 
+  467   472     1 
+  467   473     1 
+  467   489     1 
+  468   470     1 
+  468   471     1 
+  469   474     1 
+  469   475     1 
+  469   476     1 
+  469   490     1 
+  469   491     1 
+  470   472     1 
+  470   473     1 
+  470   489     1 
+  471   477     1 
+  471   478     1 
+  471   479     1 
+  471   492     1 
+  471   493     1 
+  472   474     1 
+  472   475     1 
+  472   476     1 
+  472   490     1 
+  472   491     1 
+  473   480     1 
+  473   481     1 
+  473   482     1 
+  473   490     1 
+  473   491     1 
+  474   477     1 
+  474   478     1 
+  474   479     1 
+  474   489     1 
+  475   477     1 
+  475   478     1 
+  475   479     1 
+  475   489     1 
+  476   483     1 
+  476   484     1 
+  476   485     1 
+  476   489     1 
+  477   480     1 
+  477   481     1 
+  477   482     1 
+  478   480     1 
+  478   481     1 
+  478   482     1 
+  479   486     1 
+  479   487     1 
+  479   488     1 
+  480   483     1 
+  480   484     1 
+  480   485     1 
+  481   483     1 
+  481   484     1 
+  481   485     1 
+  483   486     1 
+  483   487     1 
+  483   488     1 
+  484   486     1 
+  484   487     1 
+  484   488     1 
+  489   494     1 
+  489   495     1 
+  489   511     1 
+  490   492     1 
+  490   493     1 
+  491   496     1 
+  491   497     1 
+  491   498     1 
+  491   512     1 
+  491   513     1 
+  492   494     1 
+  492   495     1 
+  492   511     1 
+  493   499     1 
+  493   500     1 
+  493   501     1 
+  493   514     1 
+  493   515     1 
+  494   496     1 
+  494   497     1 
+  494   498     1 
+  494   512     1 
+  494   513     1 
+  495   502     1 
+  495   503     1 
+  495   504     1 
+  495   512     1 
+  495   513     1 
+  496   499     1 
+  496   500     1 
+  496   501     1 
+  496   511     1 
+  497   499     1 
+  497   500     1 
+  497   501     1 
+  497   511     1 
+  498   505     1 
+  498   506     1 
+  498   507     1 
+  498   511     1 
+  499   502     1 
+  499   503     1 
+  499   504     1 
+  500   502     1 
+  500   503     1 
+  500   504     1 
+  501   508     1 
+  501   509     1 
+  501   510     1 
+  502   505     1 
+  502   506     1 
+  502   507     1 
+  503   505     1 
+  503   506     1 
+  503   507     1 
+  505   508     1 
+  505   509     1 
+  505   510     1 
+  506   508     1 
+  506   509     1 
+  506   510     1 
+  511   516     1 
+  511   517     1 
+  511   526     1 
+  512   514     1 
+  512   515     1 
+  513   518     1 
+  513   519     1 
+  513   520     1 
+  513   527     1 
+  513   528     1 
+  514   516     1 
+  514   517     1 
+  514   526     1 
+  515   521     1 
+  515   522     1 
+  515   523     1 
+  515   529     1 
+  515   530     1 
+  516   518     1 
+  516   519     1 
+  516   520     1 
+  516   527     1 
+  516   528     1 
+  517   524     1 
+  517   525     1 
+  517   527     1 
+  517   528     1 
+  518   521     1 
+  518   522     1 
+  518   523     1 
+  518   526     1 
+  519   521     1 
+  519   522     1 
+  519   523     1 
+  519   526     1 
+  520   526     1 
+  521   524     1 
+  521   525     1 
+  522   524     1 
+  522   525     1 
+  526   531     1 
+  526   532     1 
+  526   548     1 
+  527   529     1 
+  527   530     1 
+  528   533     1 
+  528   534     1 
+  528   535     1 
+  528   549     1 
+  528   550     1 
+  529   531     1 
+  529   532     1 
+  529   548     1 
+  530   536     1 
+  530   537     1 
+  530   538     1 
+  530   551     1 
+  530   552     1 
+  531   533     1 
+  531   534     1 
+  531   535     1 
+  531   549     1 
+  531   550     1 
+  532   539     1 
+  532   540     1 
+  532   541     1 
+  532   549     1 
+  532   550     1 
+  533   536     1 
+  533   537     1 
+  533   538     1 
+  533   548     1 
+  534   536     1 
+  534   537     1 
+  534   538     1 
+  534   548     1 
+  535   542     1 
+  535   543     1 
+  535   544     1 
+  535   548     1 
+  536   539     1 
+  536   540     1 
+  536   541     1 
+  537   539     1 
+  537   540     1 
+  537   541     1 
+  538   545     1 
+  538   546     1 
+  538   547     1 
+  539   542     1 
+  539   543     1 
+  539   544     1 
+  540   542     1 
+  540   543     1 
+  540   544     1 
+  542   545     1 
+  542   546     1 
+  542   547     1 
+  543   545     1 
+  543   546     1 
+  543   547     1 
+  548   553     1 
+  548   554     1 
+  548   555     1 
+  549   551     1 
+  549   552     1 
+  550   556     1 
+  550   557     1 
+  551   553     1 
+  551   554     1 
+  551   555     1 
+  552   558     1 
+  552   559     1 
+  553   556     1 
+  553   557     1 
+  554   556     1 
+  554   557     1 
+  555   560     1 
+  555   561     1 
+  555   574     1 
+  556   558     1 
+  556   559     1 
+  557   562     1 
+  557   563     1 
+  557   564     1 
+  557   575     1 
+  557   576     1 
+  558   560     1 
+  558   561     1 
+  558   574     1 
+  559   565     1 
+  559   566     1 
+  559   570     1 
+  559   577     1 
+  559   578     1 
+  560   562     1 
+  560   563     1 
+  560   564     1 
+  560   575     1 
+  560   576     1 
+  561   567     1 
+  561   568     1 
+  561   569     1 
+  561   571     1 
+  561   572     1 
+  561   573     1 
+  561   575     1 
+  561   576     1 
+  562   565     1 
+  562   566     1 
+  562   570     1 
+  562   574     1 
+  563   565     1 
+  563   566     1 
+  563   570     1 
+  563   574     1 
+  564   574     1 
+  565   567     1 
+  565   568     1 
+  565   569     1 
+  565   571     1 
+  565   572     1 
+  565   573     1 
+  566   571     1 
+  566   572     1 
+  566   573     1 
+  567   570     1 
+  568   570     1 
+  569   570     1 
+  574   579     1 
+  574   580     1 
+  574   594     1 
+  575   577     1 
+  575   578     1 
+  576   581     1 
+  576   582     1 
+  576   583     1 
+  576   595     1 
+  576   596     1 
+  577   579     1 
+  577   580     1 
+  577   594     1 
+  578   584     1 
+  578   592     1 
+  579   581     1 
+  579   582     1 
+  579   583     1 
+  579   595     1 
+  579   596     1 
+  580   585     1 
+  580   586     1 
+  580   590     1 
+  580   593     1 
+  580   595     1 
+  580   596     1 
+  581   584     1 
+  581   592     1 
+  581   594     1 
+  582   584     1 
+  582   592     1 
+  582   594     1 
+  583   587     1 
+  583   588     1 
+  583   591     1 
+  583   594     1 
+  584   589     1 
+  584   590     1 
+  584   593     1 
+  585   587     1 
+  585   588     1 
+  585   592     1 
+  586   591     1 
+  586   592     1 
+  587   589     1 
+  587   590     1 
+  588   593     1 
+  589   591     1 
+  589   592     1 
+  591   593     1 
+
+[ angles ]
+;  ai    aj    ak funct            c0            c1            c2            c3
+    2     1     3     1 
+    2     1     4     1 
+    2     1     5     1 
+    3     1     4     1 
+    3     1     5     1 
+    4     1     5     1 
+    1     5     6     1 
+    1     5     7     1 
+    1     5    18     1 
+    6     5     7     1 
+    6     5    18     1 
+    7     5    18     1 
+    5     7     8     1 
+    5     7     9     1 
+    5     7    10     1 
+    8     7     9     1 
+    8     7    10     1 
+    9     7    10     1 
+    7    10    11     1 
+    7    10    12     1 
+    7    10    13     1 
+   11    10    12     1 
+   11    10    13     1 
+   12    10    13     1 
+   10    13    14     1 
+   13    14    15     1 
+   13    14    16     1 
+   13    14    17     1 
+   15    14    16     1 
+   15    14    17     1 
+   16    14    17     1 
+    5    18    19     1 
+    5    18    20     1 
+   19    18    20     1 
+   18    20    21     1 
+   18    20    22     1 
+   21    20    22     1 
+   20    22    23     1 
+   20    22    24     1 
+   20    22    37     1 
+   23    22    24     1 
+   23    22    37     1 
+   24    22    37     1 
+   22    24    25     1 
+   22    24    26     1 
+   22    24    27     1 
+   25    24    26     1 
+   25    24    27     1 
+   26    24    27     1 
+   24    27    28     1 
+   24    27    29     1 
+   24    27    33     1 
+   28    27    29     1 
+   28    27    33     1 
+   29    27    33     1 
+   27    29    30     1 
+   27    29    31     1 
+   27    29    32     1 
+   30    29    31     1 
+   30    29    32     1 
+   31    29    32     1 
+   27    33    34     1 
+   27    33    35     1 
+   27    33    36     1 
+   34    33    35     1 
+   34    33    36     1 
+   35    33    36     1 
+   22    37    38     1 
+   22    37    39     1 
+   38    37    39     1 
+   37    39    40     1 
+   37    39    41     1 
+   40    39    41     1 
+   39    41    42     1 
+   39    41    43     1 
+   39    41    48     1 
+   42    41    43     1 
+   42    41    48     1 
+   43    41    48     1 
+   41    43    44     1 
+   41    43    45     1 
+   41    43    46     1 
+   44    43    45     1 
+   44    43    46     1 
+   45    43    46     1 
+   43    46    47     1 
+   41    48    49     1 
+   41    48    50     1 
+   49    48    50     1 
+   48    50    51     1 
+   48    50    52     1 
+   51    50    52     1 
+   50    52    53     1 
+   50    52    54     1 
+   50    52    60     1 
+   53    52    54     1 
+   53    52    60     1 
+   54    52    60     1 
+   52    54    55     1 
+   52    54    56     1 
+   52    54    57     1 
+   55    54    56     1 
+   55    54    57     1 
+   56    54    57     1 
+   54    57    58     1 
+   54    57    59     1 
+   58    57    59     1 
+   52    60    61     1 
+   52    60    62     1 
+   61    60    62     1 
+   60    62    63     1 
+   60    62    64     1 
+   63    62    64     1 
+   62    64    65     1 
+   62    64    66     1 
+   62    64    75     1 
+   65    64    66     1 
+   65    64    75     1 
+   66    64    75     1 
+   64    66    67     1 
+   64    66    68     1 
+   64    66    69     1 
+   67    66    68     1 
+   67    66    69     1 
+   68    66    69     1 
+   66    69    70     1 
+   66    69    71     1 
+   66    69    72     1 
+   70    69    71     1 
+   70    69    72     1 
+   71    69    72     1 
+   69    72    73     1 
+   69    72    74     1 
+   73    72    74     1 
+   64    75    76     1 
+   64    75    77     1 
+   76    75    77     1 
+   75    77    78     1 
+   75    77    79     1 
+   78    77    79     1 
+   77    79    80     1 
+   77    79    81     1 
+   77    79    87     1 
+   80    79    81     1 
+   80    79    87     1 
+   81    79    87     1 
+   79    81    82     1 
+   79    81    83     1 
+   79    81    84     1 
+   82    81    83     1 
+   82    81    84     1 
+   83    81    84     1 
+   81    84    85     1 
+   81    84    86     1 
+   85    84    86     1 
+   79    87    88     1 
+   79    87    89     1 
+   88    87    89     1 
+   87    89    90     1 
+   87    89    91     1 
+   90    89    91     1 
+   89    91    92     1 
+   89    91    93     1 
+   89    91   107     1 
+   92    91    93     1 
+   92    91   107     1 
+   93    91   107     1 
+   91    93    94     1 
+   91    93    95     1 
+   91    93    96     1 
+   94    93    95     1 
+   94    93    96     1 
+   95    93    96     1 
+   93    96    97     1 
+   93    96   105     1 
+   97    96   105     1 
+   96    97    98     1 
+   96    97    99     1 
+   98    97    99     1 
+   97    99   100     1 
+   97    99   101     1 
+  100    99   101     1 
+   99   101   102     1 
+   99   101   103     1 
+  102   101   103     1 
+  101   103   104     1 
+  101   103   105     1 
+  104   103   105     1 
+   96   105   103     1 
+   96   105   106     1 
+  103   105   106     1 
+   91   107   108     1 
+   91   107   109     1 
+  108   107   109     1 
+  107   109   110     1 
+  107   109   111     1 
+  110   109   111     1 
+  109   111   112     1 
+  109   111   113     1 
+  109   111   129     1 
+  112   111   113     1 
+  112   111   129     1 
+  113   111   129     1 
+  111   113   114     1 
+  111   113   115     1 
+  111   113   116     1 
+  114   113   115     1 
+  114   113   116     1 
+  115   113   116     1 
+  113   116   117     1 
+  113   116   118     1 
+  113   116   119     1 
+  117   116   118     1 
+  117   116   119     1 
+  118   116   119     1 
+  116   119   120     1 
+  116   119   121     1 
+  116   119   122     1 
+  120   119   121     1 
+  120   119   122     1 
+  121   119   122     1 
+  119   122   123     1 
+  119   122   124     1 
+  119   122   125     1 
+  123   122   124     1 
+  123   122   125     1 
+  124   122   125     1 
+  122   125   126     1 
+  122   125   127     1 
+  122   125   128     1 
+  126   125   127     1 
+  126   125   128     1 
+  127   125   128     1 
+  111   129   130     1 
+  111   129   131     1 
+  130   129   131     1 
+  129   131   132     1 
+  129   131   133     1 
+  132   131   133     1 
+  131   133   134     1 
+  131   133   135     1 
+  131   133   139     1 
+  134   133   135     1 
+  134   133   139     1 
+  135   133   139     1 
+  133   135   136     1 
+  133   135   137     1 
+  133   135   138     1 
+  136   135   137     1 
+  136   135   138     1 
+  137   135   138     1 
+  133   139   140     1 
+  133   139   141     1 
+  140   139   141     1 
+  139   141   142     1 
+  139   141   143     1 
+  142   141   143     1 
+  141   143   144     1 
+  141   143   145     1 
+  141   143   155     1 
+  144   143   145     1 
+  144   143   155     1 
+  145   143   155     1 
+  143   145   146     1 
+  143   145   147     1 
+  143   145   151     1 
+  146   145   147     1 
+  146   145   151     1 
+  147   145   151     1 
+  145   147   148     1 
+  145   147   149     1 
+  145   147   150     1 
+  148   147   149     1 
+  148   147   150     1 
+  149   147   150     1 
+  145   151   152     1 
+  145   151   153     1 
+  145   151   154     1 
+  152   151   153     1 
+  152   151   154     1 
+  153   151   154     1 
+  143   155   156     1 
+  143   155   157     1 
+  156   155   157     1 
+  155   157   158     1 
+  155   157   159     1 
+  158   157   159     1 
+  157   159   160     1 
+  157   159   161     1 
+  157   159   175     1 
+  160   159   161     1 
+  160   159   175     1 
+  161   159   175     1 
+  159   161   162     1 
+  159   161   163     1 
+  159   161   164     1 
+  162   161   163     1 
+  162   161   164     1 
+  163   161   164     1 
+  161   164   165     1 
+  161   164   173     1 
+  165   164   173     1 
+  164   165   166     1 
+  164   165   167     1 
+  166   165   167     1 
+  165   167   168     1 
+  165   167   169     1 
+  168   167   169     1 
+  167   169   170     1 
+  167   169   171     1 
+  170   169   171     1 
+  169   171   172     1 
+  169   171   173     1 
+  172   171   173     1 
+  164   173   171     1 
+  164   173   174     1 
+  171   173   174     1 
+  159   175   176     1 
+  159   175   177     1 
+  176   175   177     1 
+  175   177   178     1 
+  175   177   179     1 
+  178   177   179     1 
+  177   179   180     1 
+  177   179   181     1 
+  177   179   182     1 
+  180   179   181     1 
+  180   179   182     1 
+  181   179   182     1 
+  179   182   183     1 
+  179   182   184     1 
+  183   182   184     1 
+  182   184   185     1 
+  182   184   186     1 
+  185   184   186     1 
+  184   186   187     1 
+  184   186   188     1 
+  184   186   199     1 
+  187   186   188     1 
+  187   186   199     1 
+  188   186   199     1 
+  186   188   189     1 
+  186   188   190     1 
+  186   188   191     1 
+  189   188   190     1 
+  189   188   191     1 
+  190   188   191     1 
+  188   191   192     1 
+  188   191   193     1 
+  188   191   194     1 
+  192   191   193     1 
+  192   191   194     1 
+  193   191   194     1 
+  191   194   195     1 
+  194   195   196     1 
+  194   195   197     1 
+  194   195   198     1 
+  196   195   197     1 
+  196   195   198     1 
+  197   195   198     1 
+  186   199   200     1 
+  186   199   201     1 
+  200   199   201     1 
+  199   201   202     1 
+  199   201   203     1 
+  202   201   203     1 
+  201   203   204     1 
+  201   203   205     1 
+  201   203   213     1 
+  204   203   205     1 
+  204   203   213     1 
+  205   203   213     1 
+  203   205   206     1 
+  203   205   207     1 
+  203   205   211     1 
+  206   205   207     1 
+  206   205   211     1 
+  207   205   211     1 
+  205   207   208     1 
+  205   207   209     1 
+  205   207   210     1 
+  208   207   209     1 
+  208   207   210     1 
+  209   207   210     1 
+  205   211   212     1 
+  203   213   214     1 
+  203   213   215     1 
+  214   213   215     1 
+  213   215   216     1 
+  213   215   217     1 
+  216   215   217     1 
+  215   217   218     1 
+  215   217   219     1 
+  215   217   237     1 
+  218   217   219     1 
+  218   217   237     1 
+  219   217   237     1 
+  217   219   220     1 
+  217   219   221     1 
+  217   219   222     1 
+  220   219   221     1 
+  220   219   222     1 
+  221   219   222     1 
+  219   222   223     1 
+  219   222   224     1 
+  219   222   225     1 
+  223   222   224     1 
+  223   222   225     1 
+  224   222   225     1 
+  222   225   226     1 
+  222   225   227     1 
+  222   225   228     1 
+  226   225   227     1 
+  226   225   228     1 
+  227   225   228     1 
+  225   228   229     1 
+  225   228   230     1 
+  229   228   230     1 
+  228   230   231     1 
+  228   230   234     1 
+  231   230   234     1 
+  230   231   232     1 
+  230   231   233     1 
+  232   231   233     1 
+  230   234   235     1 
+  230   234   236     1 
+  235   234   236     1 
+  217   237   238     1 
+  217   237   239     1 
+  238   237   239     1 
+  237   239   240     1 
+  237   239   241     1 
+  240   239   241     1 
+  239   241   242     1 
+  239   241   243     1 
+  239   241   248     1 
+  242   241   243     1 
+  242   241   248     1 
+  243   241   248     1 
+  241   243   244     1 
+  241   243   245     1 
+  241   243   246     1 
+  244   243   245     1 
+  244   243   246     1 
+  245   243   246     1 
+  243   246   247     1 
+  241   248   249     1 
+  241   248   250     1 
+  249   248   250     1 
+  248   250   251     1 
+  248   250   252     1 
+  251   250   252     1 
+  250   252   253     1 
+  250   252   254     1 
+  250   252   258     1 
+  253   252   254     1 
+  253   252   258     1 
+  254   252   258     1 
+  252   254   255     1 
+  252   254   256     1 
+  252   254   257     1 
+  255   254   256     1 
+  255   254   257     1 
+  256   254   257     1 
+  252   258   259     1 
+  252   258   260     1 
+  259   258   260     1 
+  258   260   261     1 
+  258   260   262     1 
+  261   260   262     1 
+  260   262   263     1 
+  260   262   264     1 
+  260   262   278     1 
+  263   262   264     1 
+  263   262   278     1 
+  264   262   278     1 
+  262   264   265     1 
+  262   264   266     1 
+  262   264   267     1 
+  265   264   266     1 
+  265   264   267     1 
+  266   264   267     1 
+  264   267   268     1 
+  264   267   276     1 
+  268   267   276     1 
+  267   268   269     1 
+  267   268   270     1 
+  269   268   270     1 
+  268   270   271     1 
+  268   270   272     1 
+  271   270   272     1 
+  270   272   273     1 
+  270   272   274     1 
+  273   272   274     1 
+  272   274   275     1 
+  272   274   276     1 
+  275   274   276     1 
+  267   276   274     1 
+  267   276   277     1 
+  274   276   277     1 
+  262   278   279     1 
+  262   278   280     1 
+  279   278   280     1 
+  278   280   281     1 
+  278   280   282     1 
+  281   280   282     1 
+  280   282   283     1 
+  280   282   284     1 
+  280   282   288     1 
+  283   282   284     1 
+  283   282   288     1 
+  284   282   288     1 
+  282   284   285     1 
+  282   284   286     1 
+  282   284   287     1 
+  285   284   286     1 
+  285   284   287     1 
+  286   284   287     1 
+  282   288   289     1 
+  282   288   290     1 
+  289   288   290     1 
+  288   290   291     1 
+  288   290   292     1 
+  291   290   292     1 
+  290   292   293     1 
+  290   292   294     1 
+  290   292   302     1 
+  293   292   294     1 
+  293   292   302     1 
+  294   292   302     1 
+  292   294   295     1 
+  292   294   296     1 
+  292   294   297     1 
+  295   294   296     1 
+  295   294   297     1 
+  296   294   297     1 
+  294   297   298     1 
+  294   297   299     1 
+  298   297   299     1 
+  297   299   300     1 
+  297   299   301     1 
+  300   299   301     1 
+  292   302   303     1 
+  292   302   304     1 
+  303   302   304     1 
+  302   304   305     1 
+  302   304   306     1 
+  305   304   306     1 
+  304   306   307     1 
+  304   306   308     1 
+  304   306   321     1 
+  307   306   308     1 
+  307   306   321     1 
+  308   306   321     1 
+  306   308   309     1 
+  306   308   310     1 
+  306   308   311     1 
+  309   308   310     1 
+  309   308   311     1 
+  310   308   311     1 
+  308   311   312     1 
+  308   311   313     1 
+  308   311   317     1 
+  312   311   313     1 
+  312   311   317     1 
+  313   311   317     1 
+  311   313   314     1 
+  311   313   315     1 
+  311   313   316     1 
+  314   313   315     1 
+  314   313   316     1 
+  315   313   316     1 
+  311   317   318     1 
+  311   317   319     1 
+  311   317   320     1 
+  318   317   319     1 
+  318   317   320     1 
+  319   317   320     1 
+  306   321   322     1 
+  306   321   323     1 
+  322   321   323     1 
+  321   323   324     1 
+  321   323   333     1 
+  324   323   333     1 
+  323   324   325     1 
+  323   324   326     1 
+  323   324   327     1 
+  325   324   326     1 
+  325   324   327     1 
+  326   324   327     1 
+  324   327   328     1 
+  324   327   329     1 
+  324   327   330     1 
+  328   327   329     1 
+  328   327   330     1 
+  329   327   330     1 
+  327   330   331     1 
+  327   330   332     1 
+  327   330   333     1 
+  331   330   332     1 
+  331   330   333     1 
+  332   330   333     1 
+  323   333   330     1 
+  323   333   334     1 
+  323   333   335     1 
+  330   333   334     1 
+  330   333   335     1 
+  334   333   335     1 
+  333   335   336     1 
+  333   335   337     1 
+  336   335   337     1 
+  335   337   338     1 
+  335   337   339     1 
+  338   337   339     1 
+  337   339   340     1 
+  337   339   341     1 
+  337   339   354     1 
+  340   339   341     1 
+  340   339   354     1 
+  341   339   354     1 
+  339   341   342     1 
+  339   341   343     1 
+  339   341   344     1 
+  342   341   343     1 
+  342   341   344     1 
+  343   341   344     1 
+  341   344   345     1 
+  341   344   346     1 
+  341   344   350     1 
+  345   344   346     1 
+  345   344   350     1 
+  346   344   350     1 
+  344   346   347     1 
+  344   346   348     1 
+  344   346   349     1 
+  347   346   348     1 
+  347   346   349     1 
+  348   346   349     1 
+  344   350   351     1 
+  344   350   352     1 
+  344   350   353     1 
+  351   350   352     1 
+  351   350   353     1 
+  352   350   353     1 
+  339   354   355     1 
+  339   354   356     1 
+  355   354   356     1 
+  354   356   357     1 
+  354   356   358     1 
+  357   356   358     1 
+  356   358   359     1 
+  356   358   360     1 
+  356   358   378     1 
+  359   358   360     1 
+  359   358   378     1 
+  360   358   378     1 
+  358   360   361     1 
+  358   360   362     1 
+  358   360   363     1 
+  361   360   362     1 
+  361   360   363     1 
+  362   360   363     1 
+  360   363   364     1 
+  360   363   377     1 
+  364   363   377     1 
+  363   364   365     1 
+  363   364   366     1 
+  365   364   366     1 
+  364   366   367     1 
+  364   366   368     1 
+  367   366   368     1 
+  366   368   369     1 
+  366   368   377     1 
+  369   368   377     1 
+  368   369   370     1 
+  368   369   371     1 
+  370   369   371     1 
+  369   371   372     1 
+  369   371   373     1 
+  372   371   373     1 
+  371   373   374     1 
+  371   373   375     1 
+  374   373   375     1 
+  373   375   376     1 
+  373   375   377     1 
+  376   375   377     1 
+  363   377   368     1 
+  363   377   375     1 
+  368   377   375     1 
+  358   378   379     1 
+  358   378   380     1 
+  379   378   380     1 
+  378   380   381     1 
+  378   380   382     1 
+  381   380   382     1 
+  380   382   383     1 
+  380   382   384     1 
+  380   382   400     1 
+  383   382   384     1 
+  383   382   400     1 
+  384   382   400     1 
+  382   384   385     1 
+  382   384   386     1 
+  382   384   387     1 
+  385   384   386     1 
+  385   384   387     1 
+  386   384   387     1 
+  384   387   388     1 
+  384   387   389     1 
+  384   387   390     1 
+  388   387   389     1 
+  388   387   390     1 
+  389   387   390     1 
+  387   390   391     1 
+  387   390   392     1 
+  387   390   393     1 
+  391   390   392     1 
+  391   390   393     1 
+  392   390   393     1 
+  390   393   394     1 
+  390   393   395     1 
+  390   393   396     1 
+  394   393   395     1 
+  394   393   396     1 
+  395   393   396     1 
+  393   396   397     1 
+  393   396   398     1 
+  393   396   399     1 
+  397   396   398     1 
+  397   396   399     1 
+  398   396   399     1 
+  382   400   401     1 
+  382   400   402     1 
+  401   400   402     1 
+  400   402   403     1 
+  400   402   404     1 
+  403   402   404     1 
+  402   404   405     1 
+  402   404   406     1 
+  402   404   417     1 
+  405   404   406     1 
+  405   404   417     1 
+  406   404   417     1 
+  404   406   407     1 
+  404   406   408     1 
+  404   406   409     1 
+  407   406   408     1 
+  407   406   409     1 
+  408   406   409     1 
+  406   409   410     1 
+  406   409   411     1 
+  406   409   412     1 
+  410   409   411     1 
+  410   409   412     1 
+  411   409   412     1 
+  409   412   413     1 
+  409   412   414     1 
+  413   412   414     1 
+  412   414   415     1 
+  412   414   416     1 
+  415   414   416     1 
+  404   417   418     1 
+  404   417   419     1 
+  418   417   419     1 
+  417   419   420     1 
+  417   419   421     1 
+  420   419   421     1 
+  419   421   422     1 
+  419   421   423     1 
+  419   421   434     1 
+  422   421   423     1 
+  422   421   434     1 
+  423   421   434     1 
+  421   423   424     1 
+  421   423   425     1 
+  421   423   426     1 
+  424   423   425     1 
+  424   423   426     1 
+  425   423   426     1 
+  423   426   427     1 
+  423   426   428     1 
+  423   426   429     1 
+  427   426   428     1 
+  427   426   429     1 
+  428   426   429     1 
+  426   429   430     1 
+  426   429   431     1 
+  430   429   431     1 
+  429   431   432     1 
+  429   431   433     1 
+  432   431   433     1 
+  421   434   435     1 
+  421   434   436     1 
+  435   434   436     1 
+  434   436   437     1 
+  434   436   438     1 
+  437   436   438     1 
+  436   438   439     1 
+  436   438   440     1 
+  436   438   448     1 
+  439   438   440     1 
+  439   438   448     1 
+  440   438   448     1 
+  438   440   441     1 
+  438   440   442     1 
+  438   440   443     1 
+  441   440   442     1 
+  441   440   443     1 
+  442   440   443     1 
+  440   443   444     1 
+  440   443   445     1 
+  444   443   445     1 
+  443   445   446     1 
+  443   445   447     1 
+  446   445   447     1 
+  438   448   449     1 
+  438   448   450     1 
+  449   448   450     1 
+  448   450   451     1 
+  448   450   452     1 
+  451   450   452     1 
+  450   452   453     1 
+  450   452   454     1 
+  450   452   467     1 
+  453   452   454     1 
+  453   452   467     1 
+  454   452   467     1 
+  452   454   455     1 
+  452   454   456     1 
+  452   454   457     1 
+  455   454   456     1 
+  455   454   457     1 
+  456   454   457     1 
+  454   457   458     1 
+  454   457   459     1 
+  454   457   463     1 
+  458   457   459     1 
+  458   457   463     1 
+  459   457   463     1 
+  457   459   460     1 
+  457   459   461     1 
+  457   459   462     1 
+  460   459   461     1 
+  460   459   462     1 
+  461   459   462     1 
+  457   463   464     1 
+  457   463   465     1 
+  457   463   466     1 
+  464   463   465     1 
+  464   463   466     1 
+  465   463   466     1 
+  452   467   468     1 
+  452   467   469     1 
+  468   467   469     1 
+  467   469   470     1 
+  467   469   471     1 
+  470   469   471     1 
+  469   471   472     1 
+  469   471   473     1 
+  469   471   489     1 
+  472   471   473     1 
+  472   471   489     1 
+  473   471   489     1 
+  471   473   474     1 
+  471   473   475     1 
+  471   473   476     1 
+  474   473   475     1 
+  474   473   476     1 
+  475   473   476     1 
+  473   476   477     1 
+  473   476   478     1 
+  473   476   479     1 
+  477   476   478     1 
+  477   476   479     1 
+  478   476   479     1 
+  476   479   480     1 
+  476   479   481     1 
+  476   479   482     1 
+  480   479   481     1 
+  480   479   482     1 
+  481   479   482     1 
+  479   482   483     1 
+  479   482   484     1 
+  479   482   485     1 
+  483   482   484     1 
+  483   482   485     1 
+  484   482   485     1 
+  482   485   486     1 
+  482   485   487     1 
+  482   485   488     1 
+  486   485   487     1 
+  486   485   488     1 
+  487   485   488     1 
+  471   489   490     1 
+  471   489   491     1 
+  490   489   491     1 
+  489   491   492     1 
+  489   491   493     1 
+  492   491   493     1 
+  491   493   494     1 
+  491   493   495     1 
+  491   493   511     1 
+  494   493   495     1 
+  494   493   511     1 
+  495   493   511     1 
+  493   495   496     1 
+  493   495   497     1 
+  493   495   498     1 
+  496   495   497     1 
+  496   495   498     1 
+  497   495   498     1 
+  495   498   499     1 
+  495   498   500     1 
+  495   498   501     1 
+  499   498   500     1 
+  499   498   501     1 
+  500   498   501     1 
+  498   501   502     1 
+  498   501   503     1 
+  498   501   504     1 
+  502   501   503     1 
+  502   501   504     1 
+  503   501   504     1 
+  501   504   505     1 
+  501   504   506     1 
+  501   504   507     1 
+  505   504   506     1 
+  505   504   507     1 
+  506   504   507     1 
+  504   507   508     1 
+  504   507   509     1 
+  504   507   510     1 
+  508   507   509     1 
+  508   507   510     1 
+  509   507   510     1 
+  493   511   512     1 
+  493   511   513     1 
+  512   511   513     1 
+  511   513   514     1 
+  511   513   515     1 
+  514   513   515     1 
+  513   515   516     1 
+  513   515   517     1 
+  513   515   526     1 
+  516   515   517     1 
+  516   515   526     1 
+  517   515   526     1 
+  515   517   518     1 
+  515   517   519     1 
+  515   517   520     1 
+  518   517   519     1 
+  518   517   520     1 
+  519   517   520     1 
+  517   520   521     1 
+  517   520   522     1 
+  517   520   523     1 
+  521   520   522     1 
+  521   520   523     1 
+  522   520   523     1 
+  520   523   524     1 
+  520   523   525     1 
+  524   523   525     1 
+  515   526   527     1 
+  515   526   528     1 
+  527   526   528     1 
+  526   528   529     1 
+  526   528   530     1 
+  529   528   530     1 
+  528   530   531     1 
+  528   530   532     1 
+  528   530   548     1 
+  531   530   532     1 
+  531   530   548     1 
+  532   530   548     1 
+  530   532   533     1 
+  530   532   534     1 
+  530   532   535     1 
+  533   532   534     1 
+  533   532   535     1 
+  534   532   535     1 
+  532   535   536     1 
+  532   535   537     1 
+  532   535   538     1 
+  536   535   537     1 
+  536   535   538     1 
+  537   535   538     1 
+  535   538   539     1 
+  535   538   540     1 
+  535   538   541     1 
+  539   538   540     1 
+  539   538   541     1 
+  540   538   541     1 
+  538   541   542     1 
+  538   541   543     1 
+  538   541   544     1 
+  542   541   543     1 
+  542   541   544     1 
+  543   541   544     1 
+  541   544   545     1 
+  541   544   546     1 
+  541   544   547     1 
+  545   544   546     1 
+  545   544   547     1 
+  546   544   547     1 
+  530   548   549     1 
+  530   548   550     1 
+  549   548   550     1 
+  548   550   551     1 
+  548   550   552     1 
+  551   550   552     1 
+  550   552   553     1 
+  550   552   554     1 
+  550   552   555     1 
+  553   552   554     1 
+  553   552   555     1 
+  554   552   555     1 
+  552   555   556     1 
+  552   555   557     1 
+  556   555   557     1 
+  555   557   558     1 
+  555   557   559     1 
+  558   557   559     1 
+  557   559   560     1 
+  557   559   561     1 
+  557   559   574     1 
+  560   559   561     1 
+  560   559   574     1 
+  561   559   574     1 
+  559   561   562     1 
+  559   561   563     1 
+  559   561   564     1 
+  562   561   563     1 
+  562   561   564     1 
+  563   561   564     1 
+  561   564   565     1 
+  561   564   566     1 
+  561   564   570     1 
+  565   564   566     1 
+  565   564   570     1 
+  566   564   570     1 
+  564   566   567     1 
+  564   566   568     1 
+  564   566   569     1 
+  567   566   568     1 
+  567   566   569     1 
+  568   566   569     1 
+  564   570   571     1 
+  564   570   572     1 
+  564   570   573     1 
+  571   570   572     1 
+  571   570   573     1 
+  572   570   573     1 
+  559   574   575     1 
+  559   574   576     1 
+  575   574   576     1 
+  574   576   577     1 
+  574   576   578     1 
+  577   576   578     1 
+  576   578   579     1 
+  576   578   580     1 
+  576   578   594     1 
+  579   578   580     1 
+  579   578   594     1 
+  580   578   594     1 
+  578   580   581     1 
+  578   580   582     1 
+  578   580   583     1 
+  581   580   582     1 
+  581   580   583     1 
+  582   580   583     1 
+  580   583   584     1 
+  580   583   592     1 
+  584   583   592     1 
+  583   584   585     1 
+  583   584   586     1 
+  585   584   586     1 
+  584   586   587     1 
+  584   586   588     1 
+  587   586   588     1 
+  586   588   589     1 
+  586   588   590     1 
+  589   588   590     1 
+  588   590   591     1 
+  588   590   592     1 
+  591   590   592     1 
+  583   592   590     1 
+  583   592   593     1 
+  590   592   593     1 
+  578   594   595     1 
+  578   594   596     1 
+  595   594   596     1 
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
+    2     1     5     6     3 
+    2     1     5     7     3 
+    2     1     5    18     3 
+    3     1     5     6     3 
+    3     1     5     7     3 
+    3     1     5    18     3 
+    4     1     5     6     3 
+    4     1     5     7     3 
+    4     1     5    18     3 
+    1     5     7     8     3 
+    1     5     7     9     3 
+    1     5     7    10     3 
+    6     5     7     8     3 
+    6     5     7     9     3 
+    6     5     7    10     3 
+   18     5     7     8     3 
+   18     5     7     9     3 
+   18     5     7    10     3 
+    1     5    18    19     3 
+    1     5    18    20     3 
+    6     5    18    19     3 
+    6     5    18    20     3 
+    7     5    18    19     3 
+    7     5    18    20     3 
+    5     7    10    11     3 
+    5     7    10    12     3 
+    5     7    10    13     3 
+    8     7    10    11     3 
+    8     7    10    12     3 
+    8     7    10    13     3 
+    9     7    10    11     3 
+    9     7    10    12     3 
+    9     7    10    13     3 
+    7    10    13    14     3 
+   11    10    13    14     3 
+   12    10    13    14     3 
+   10    13    14    15     3 
+   10    13    14    16     3 
+   10    13    14    17     3 
+    5    18    20    21     3    backbone_prop_1
+    5    18    20    22     3    backbone_prop_1
+   19    18    20    21     3    backbone_prop_2
+   19    18    20    22     3    backbone_prop_1
+   18    20    22    24     3    backbone_prop_3
+   18    20    22    37     3    backbone_prop_4
+   20    22    24    25     3 
+   20    22    24    26     3 
+   20    22    24    27     3 
+   23    22    24    25     3 
+   23    22    24    26     3 
+   23    22    24    27     3 
+   37    22    24    25     3 
+   37    22    24    26     3 
+   37    22    24    27     3 
+   20    22    37    38     3 
+   20    22    37    39     3 
+   23    22    37    38     3 
+   23    22    37    39     3 
+   24    22    37    38     3 
+   24    22    37    39     3 
+   22    24    27    28     3 
+   22    24    27    29     3 
+   22    24    27    33     3 
+   25    24    27    28     3 
+   25    24    27    29     3 
+   25    24    27    33     3 
+   26    24    27    28     3 
+   26    24    27    29     3 
+   26    24    27    33     3 
+   24    27    29    30     3 
+   24    27    29    31     3 
+   24    27    29    32     3 
+   28    27    29    30     3 
+   28    27    29    31     3 
+   28    27    29    32     3 
+   33    27    29    30     3 
+   33    27    29    31     3 
+   33    27    29    32     3 
+   24    27    33    34     3 
+   24    27    33    35     3 
+   24    27    33    36     3 
+   28    27    33    34     3 
+   28    27    33    35     3 
+   28    27    33    36     3 
+   29    27    33    34     3 
+   29    27    33    35     3 
+   29    27    33    36     3 
+   22    37    39    40     3    backbone_prop_1
+   22    37    39    41     3    backbone_prop_1
+   38    37    39    40     3    backbone_prop_2
+   38    37    39    41     3    backbone_prop_1
+   37    39    41    43     3    backbone_prop_3
+   37    39    41    48     3    backbone_prop_4
+   39    41    43    44     3 
+   39    41    43    45     3 
+   39    41    43    46     3 
+   42    41    43    44     3 
+   42    41    43    45     3 
+   42    41    43    46     3 
+   48    41    43    44     3 
+   48    41    43    45     3 
+   48    41    43    46     3 
+   39    41    48    49     3 
+   39    41    48    50     3 
+   42    41    48    49     3 
+   42    41    48    50     3 
+   43    41    48    49     3 
+   43    41    48    50     3 
+   41    43    46    47     3 
+   44    43    46    47     3 
+   45    43    46    47     3 
+   41    48    50    51     3    backbone_prop_1
+   41    48    50    52     3    backbone_prop_1
+   49    48    50    51     3    backbone_prop_2
+   49    48    50    52     3    backbone_prop_1
+   48    50    52    54     3    backbone_prop_3
+   48    50    52    60     3    backbone_prop_4
+   50    52    54    55     3 
+   50    52    54    56     3 
+   50    52    54    57     3 
+   53    52    54    55     3 
+   53    52    54    56     3 
+   53    52    54    57     3 
+   60    52    54    55     3 
+   60    52    54    56     3 
+   60    52    54    57     3 
+   50    52    60    61     3 
+   50    52    60    62     3 
+   53    52    60    61     3 
+   53    52    60    62     3 
+   54    52    60    61     3 
+   54    52    60    62     3 
+   52    54    57    58     3 
+   52    54    57    59     3 
+   55    54    57    58     3 
+   55    54    57    59     3 
+   56    54    57    58     3 
+   56    54    57    59     3 
+   52    60    62    63     3    backbone_prop_1
+   52    60    62    64     3    backbone_prop_1
+   61    60    62    63     3    backbone_prop_2
+   61    60    62    64     3    backbone_prop_1
+   60    62    64    66     3    backbone_prop_3
+   60    62    64    75     3    backbone_prop_4
+   62    64    66    67     3 
+   62    64    66    68     3 
+   62    64    66    69     3 
+   65    64    66    67     3 
+   65    64    66    68     3 
+   65    64    66    69     3 
+   75    64    66    67     3 
+   75    64    66    68     3 
+   75    64    66    69     3 
+   62    64    75    76     3 
+   62    64    75    77     3 
+   65    64    75    76     3 
+   65    64    75    77     3 
+   66    64    75    76     3 
+   66    64    75    77     3 
+   64    66    69    70     3 
+   64    66    69    71     3 
+   64    66    69    72     3 
+   67    66    69    70     3 
+   67    66    69    71     3 
+   67    66    69    72     3 
+   68    66    69    70     3 
+   68    66    69    71     3 
+   68    66    69    72     3 
+   66    69    72    73     3 
+   66    69    72    74     3 
+   70    69    72    73     3 
+   70    69    72    74     3 
+   71    69    72    73     3 
+   71    69    72    74     3 
+   64    75    77    78     3    backbone_prop_1
+   64    75    77    79     3    backbone_prop_1
+   76    75    77    78     3    backbone_prop_2
+   76    75    77    79     3    backbone_prop_1
+   75    77    79    81     3    backbone_prop_3
+   75    77    79    87     3    backbone_prop_4
+   77    79    81    82     3 
+   77    79    81    83     3 
+   77    79    81    84     3 
+   80    79    81    82     3 
+   80    79    81    83     3 
+   80    79    81    84     3 
+   87    79    81    82     3 
+   87    79    81    83     3 
+   87    79    81    84     3 
+   77    79    87    88     3 
+   77    79    87    89     3 
+   80    79    87    88     3 
+   80    79    87    89     3 
+   81    79    87    88     3 
+   81    79    87    89     3 
+   79    81    84    85     3 
+   79    81    84    86     3 
+   82    81    84    85     3 
+   82    81    84    86     3 
+   83    81    84    85     3 
+   83    81    84    86     3 
+   79    87    89    90     3    backbone_prop_1
+   79    87    89    91     3    backbone_prop_1
+   88    87    89    90     3    backbone_prop_2
+   88    87    89    91     3    backbone_prop_1
+   87    89    91    93     3    backbone_prop_3
+   87    89    91   107     3    backbone_prop_4
+   89    91    93    94     3 
+   89    91    93    95     3 
+   89    91    93    96     3 
+   92    91    93    94     3 
+   92    91    93    95     3 
+   92    91    93    96     3 
+  107    91    93    94     3 
+  107    91    93    95     3 
+  107    91    93    96     3 
+   89    91   107   108     3 
+   89    91   107   109     3 
+   92    91   107   108     3 
+   92    91   107   109     3 
+   93    91   107   108     3 
+   93    91   107   109     3 
+   91    93    96    97     3 
+   91    93    96   105     3 
+   94    93    96    97     3 
+   94    93    96   105     3 
+   95    93    96    97     3 
+   95    93    96   105     3 
+   93    96    97    98     3    aromatic_prop_1
+   93    96    97    99     3    aromatic_prop_1
+  105    96    97    98     3    aromatic_prop_1
+  105    96    97    99     3    aromatic_prop_1
+   93    96   105   103     3    aromatic_prop_1
+   93    96   105   106     3    aromatic_prop_1
+   97    96   105   103     3    aromatic_prop_1
+   97    96   105   106     3    aromatic_prop_1
+   96    97    99   100     3    aromatic_prop_1
+   96    97    99   101     3    aromatic_prop_1
+   98    97    99   100     3    aromatic_prop_1
+   98    97    99   101     3    aromatic_prop_1
+   97    99   101   102     3    aromatic_prop_1
+   97    99   101   103     3    aromatic_prop_1
+  100    99   101   102     3    aromatic_prop_1
+  100    99   101   103     3    aromatic_prop_1
+   99   101   103   104     3    aromatic_prop_1
+   99   101   103   105     3    aromatic_prop_1
+  102   101   103   104     3    aromatic_prop_1
+  102   101   103   105     3    aromatic_prop_1
+  101   103   105    96     3    aromatic_prop_1
+  101   103   105   106     3    aromatic_prop_1
+  104   103   105    96     3    aromatic_prop_1
+  104   103   105   106     3    aromatic_prop_1
+   91   107   109   110     3    backbone_prop_1
+   91   107   109   111     3    backbone_prop_1
+  108   107   109   110     3    backbone_prop_2
+  108   107   109   111     3    backbone_prop_1
+  107   109   111   113     3    backbone_prop_3
+  107   109   111   129     3    backbone_prop_4
+  109   111   113   114     3 
+  109   111   113   115     3 
+  109   111   113   116     3 
+  112   111   113   114     3 
+  112   111   113   115     3 
+  112   111   113   116     3 
+  129   111   113   114     3 
+  129   111   113   115     3 
+  129   111   113   116     3 
+  109   111   129   130     3 
+  109   111   129   131     3 
+  112   111   129   130     3 
+  112   111   129   131     3 
+  113   111   129   130     3 
+  113   111   129   131     3 
+  111   113   116   117     3 
+  111   113   116   118     3 
+  111   113   116   119     3 
+  114   113   116   117     3 
+  114   113   116   118     3 
+  114   113   116   119     3 
+  115   113   116   117     3 
+  115   113   116   118     3 
+  115   113   116   119     3 
+  113   116   119   120     3 
+  113   116   119   121     3 
+  113   116   119   122     3 
+  117   116   119   120     3 
+  117   116   119   121     3 
+  117   116   119   122     3 
+  118   116   119   120     3 
+  118   116   119   121     3 
+  118   116   119   122     3 
+  116   119   122   123     3 
+  116   119   122   124     3 
+  116   119   122   125     3 
+  120   119   122   123     3 
+  120   119   122   124     3 
+  120   119   122   125     3 
+  121   119   122   123     3 
+  121   119   122   124     3 
+  121   119   122   125     3 
+  119   122   125   126     3 
+  119   122   125   127     3 
+  119   122   125   128     3 
+  123   122   125   126     3 
+  123   122   125   127     3 
+  123   122   125   128     3 
+  124   122   125   126     3 
+  124   122   125   127     3 
+  124   122   125   128     3 
+  111   129   131   132     3    backbone_prop_1
+  111   129   131   133     3    backbone_prop_1
+  130   129   131   132     3    backbone_prop_2
+  130   129   131   133     3    backbone_prop_1
+  129   131   133   135     3    backbone_prop_3
+  129   131   133   139     3    backbone_prop_4
+  131   133   135   136     3 
+  131   133   135   137     3 
+  131   133   135   138     3 
+  134   133   135   136     3 
+  134   133   135   137     3 
+  134   133   135   138     3 
+  139   133   135   136     3 
+  139   133   135   137     3 
+  139   133   135   138     3 
+  131   133   139   140     3 
+  131   133   139   141     3 
+  134   133   139   140     3 
+  134   133   139   141     3 
+  135   133   139   140     3 
+  135   133   139   141     3 
+  133   139   141   142     3    backbone_prop_1
+  133   139   141   143     3    backbone_prop_1
+  140   139   141   142     3    backbone_prop_2
+  140   139   141   143     3    backbone_prop_1
+  139   141   143   145     3    backbone_prop_3
+  139   141   143   155     3    backbone_prop_4
+  141   143   145   146     3 
+  141   143   145   147     3 
+  141   143   145   151     3 
+  144   143   145   146     3 
+  144   143   145   147     3 
+  144   143   145   151     3 
+  155   143   145   146     3 
+  155   143   145   147     3 
+  155   143   145   151     3 
+  141   143   155   156     3 
+  141   143   155   157     3 
+  144   143   155   156     3 
+  144   143   155   157     3 
+  145   143   155   156     3 
+  145   143   155   157     3 
+  143   145   147   148     3 
+  143   145   147   149     3 
+  143   145   147   150     3 
+  146   145   147   148     3 
+  146   145   147   149     3 
+  146   145   147   150     3 
+  151   145   147   148     3 
+  151   145   147   149     3 
+  151   145   147   150     3 
+  143   145   151   152     3 
+  143   145   151   153     3 
+  143   145   151   154     3 
+  146   145   151   152     3 
+  146   145   151   153     3 
+  146   145   151   154     3 
+  147   145   151   152     3 
+  147   145   151   153     3 
+  147   145   151   154     3 
+  143   155   157   158     3    backbone_prop_1
+  143   155   157   159     3    backbone_prop_1
+  156   155   157   158     3    backbone_prop_2
+  156   155   157   159     3    backbone_prop_1
+  155   157   159   161     3    backbone_prop_3
+  155   157   159   175     3    backbone_prop_4
+  157   159   161   162     3 
+  157   159   161   163     3 
+  157   159   161   164     3 
+  160   159   161   162     3 
+  160   159   161   163     3 
+  160   159   161   164     3 
+  175   159   161   162     3 
+  175   159   161   163     3 
+  175   159   161   164     3 
+  157   159   175   176     3 
+  157   159   175   177     3 
+  160   159   175   176     3 
+  160   159   175   177     3 
+  161   159   175   176     3 
+  161   159   175   177     3 
+  159   161   164   165     3 
+  159   161   164   173     3 
+  162   161   164   165     3 
+  162   161   164   173     3 
+  163   161   164   165     3 
+  163   161   164   173     3 
+  161   164   165   166     3    aromatic_prop_1
+  161   164   165   167     3    aromatic_prop_1
+  173   164   165   166     3    aromatic_prop_1
+  173   164   165   167     3    aromatic_prop_1
+  161   164   173   171     3    aromatic_prop_1
+  161   164   173   174     3    aromatic_prop_1
+  165   164   173   171     3    aromatic_prop_1
+  165   164   173   174     3    aromatic_prop_1
+  164   165   167   168     3    aromatic_prop_1
+  164   165   167   169     3    aromatic_prop_1
+  166   165   167   168     3    aromatic_prop_1
+  166   165   167   169     3    aromatic_prop_1
+  165   167   169   170     3    aromatic_prop_1
+  165   167   169   171     3    aromatic_prop_1
+  168   167   169   170     3    aromatic_prop_1
+  168   167   169   171     3    aromatic_prop_1
+  167   169   171   172     3    aromatic_prop_1
+  167   169   171   173     3    aromatic_prop_1
+  170   169   171   172     3    aromatic_prop_1
+  170   169   171   173     3    aromatic_prop_1
+  169   171   173   164     3    aromatic_prop_1
+  169   171   173   174     3    aromatic_prop_1
+  172   171   173   164     3    aromatic_prop_1
+  172   171   173   174     3    aromatic_prop_1
+  159   175   177   178     3    backbone_prop_1
+  159   175   177   179     3    backbone_prop_1
+  176   175   177   178     3    backbone_prop_2
+  176   175   177   179     3    backbone_prop_1
+  175   177   179   182     3    backbone_prop_4
+  177   179   182   183     3 
+  177   179   182   184     3 
+  180   179   182   183     3 
+  180   179   182   184     3 
+  181   179   182   183     3 
+  181   179   182   184     3 
+  179   182   184   185     3    backbone_prop_1
+  179   182   184   186     3    backbone_prop_1
+  183   182   184   185     3    backbone_prop_2
+  183   182   184   186     3    backbone_prop_1
+  182   184   186   188     3    backbone_prop_3
+  182   184   186   199     3    backbone_prop_4
+  184   186   188   189     3 
+  184   186   188   190     3 
+  184   186   188   191     3 
+  187   186   188   189     3 
+  187   186   188   190     3 
+  187   186   188   191     3 
+  199   186   188   189     3 
+  199   186   188   190     3 
+  199   186   188   191     3 
+  184   186   199   200     3 
+  184   186   199   201     3 
+  187   186   199   200     3 
+  187   186   199   201     3 
+  188   186   199   200     3 
+  188   186   199   201     3 
+  186   188   191   192     3 
+  186   188   191   193     3 
+  186   188   191   194     3 
+  189   188   191   192     3 
+  189   188   191   193     3 
+  189   188   191   194     3 
+  190   188   191   192     3 
+  190   188   191   193     3 
+  190   188   191   194     3 
+  188   191   194   195     3 
+  192   191   194   195     3 
+  193   191   194   195     3 
+  191   194   195   196     3 
+  191   194   195   197     3 
+  191   194   195   198     3 
+  186   199   201   202     3    backbone_prop_1
+  186   199   201   203     3    backbone_prop_1
+  200   199   201   202     3    backbone_prop_2
+  200   199   201   203     3    backbone_prop_1
+  199   201   203   205     3    backbone_prop_3
+  199   201   203   213     3    backbone_prop_4
+  201   203   205   206     3 
+  201   203   205   207     3 
+  201   203   205   211     3 
+  204   203   205   206     3 
+  204   203   205   207     3 
+  204   203   205   211     3 
+  213   203   205   206     3 
+  213   203   205   207     3 
+  213   203   205   211     3 
+  201   203   213   214     3 
+  201   203   213   215     3 
+  204   203   213   214     3 
+  204   203   213   215     3 
+  205   203   213   214     3 
+  205   203   213   215     3 
+  203   205   207   208     3 
+  203   205   207   209     3 
+  203   205   207   210     3 
+  206   205   207   208     3 
+  206   205   207   209     3 
+  206   205   207   210     3 
+  211   205   207   208     3 
+  211   205   207   209     3 
+  211   205   207   210     3 
+  203   205   211   212     3 
+  206   205   211   212     3 
+  207   205   211   212     3 
+  203   213   215   216     3    backbone_prop_1
+  203   213   215   217     3    backbone_prop_1
+  214   213   215   216     3    backbone_prop_2
+  214   213   215   217     3    backbone_prop_1
+  213   215   217   219     3    backbone_prop_3
+  213   215   217   237     3    backbone_prop_4
+  215   217   219   220     3 
+  215   217   219   221     3 
+  215   217   219   222     3 
+  218   217   219   220     3 
+  218   217   219   221     3 
+  218   217   219   222     3 
+  237   217   219   220     3 
+  237   217   219   221     3 
+  237   217   219   222     3 
+  215   217   237   238     3 
+  215   217   237   239     3 
+  218   217   237   238     3 
+  218   217   237   239     3 
+  219   217   237   238     3 
+  219   217   237   239     3 
+  217   219   222   223     3 
+  217   219   222   224     3 
+  217   219   222   225     3 
+  220   219   222   223     3 
+  220   219   222   224     3 
+  220   219   222   225     3 
+  221   219   222   223     3 
+  221   219   222   224     3 
+  221   219   222   225     3 
+  219   222   225   226     3 
+  219   222   225   227     3 
+  219   222   225   228     3 
+  223   222   225   226     3 
+  223   222   225   227     3 
+  223   222   225   228     3 
+  224   222   225   226     3 
+  224   222   225   227     3 
+  224   222   225   228     3 
+  222   225   228   229     3 
+  222   225   228   230     3 
+  226   225   228   229     3 
+  226   225   228   230     3 
+  227   225   228   229     3 
+  227   225   228   230     3 
+  225   228   230   231     3    sidechain_prop_1
+  225   228   230   234     3    sidechain_prop_1
+  229   228   230   231     3    sidechain_prop_1
+  229   228   230   234     3    sidechain_prop_1
+  228   230   231   232     3    sidechain_prop_1
+  228   230   231   233     3    sidechain_prop_1
+  234   230   231   232     3    sidechain_prop_1
+  234   230   231   233     3    sidechain_prop_1
+  228   230   234   235     3 
+  228   230   234   236     3 
+  231   230   234   235     3 
+  231   230   234   236     3 
+  217   237   239   240     3    backbone_prop_1
+  217   237   239   241     3    backbone_prop_1
+  238   237   239   240     3    backbone_prop_2
+  238   237   239   241     3    backbone_prop_1
+  237   239   241   243     3    backbone_prop_3
+  237   239   241   248     3    backbone_prop_4
+  239   241   243   244     3 
+  239   241   243   245     3 
+  239   241   243   246     3 
+  242   241   243   244     3 
+  242   241   243   245     3 
+  242   241   243   246     3 
+  248   241   243   244     3 
+  248   241   243   245     3 
+  248   241   243   246     3 
+  239   241   248   249     3 
+  239   241   248   250     3 
+  242   241   248   249     3 
+  242   241   248   250     3 
+  243   241   248   249     3 
+  243   241   248   250     3 
+  241   243   246   247     3 
+  244   243   246   247     3 
+  245   243   246   247     3 
+  241   248   250   251     3    backbone_prop_1
+  241   248   250   252     3    backbone_prop_1
+  249   248   250   251     3    backbone_prop_2
+  249   248   250   252     3    backbone_prop_1
+  248   250   252   254     3    backbone_prop_3
+  248   250   252   258     3    backbone_prop_4
+  250   252   254   255     3 
+  250   252   254   256     3 
+  250   252   254   257     3 
+  253   252   254   255     3 
+  253   252   254   256     3 
+  253   252   254   257     3 
+  258   252   254   255     3 
+  258   252   254   256     3 
+  258   252   254   257     3 
+  250   252   258   259     3 
+  250   252   258   260     3 
+  253   252   258   259     3 
+  253   252   258   260     3 
+  254   252   258   259     3 
+  254   252   258   260     3 
+  252   258   260   261     3    backbone_prop_1
+  252   258   260   262     3    backbone_prop_1
+  259   258   260   261     3    backbone_prop_2
+  259   258   260   262     3    backbone_prop_1
+  258   260   262   264     3    backbone_prop_3
+  258   260   262   278     3    backbone_prop_4
+  260   262   264   265     3 
+  260   262   264   266     3 
+  260   262   264   267     3 
+  263   262   264   265     3 
+  263   262   264   266     3 
+  263   262   264   267     3 
+  278   262   264   265     3 
+  278   262   264   266     3 
+  278   262   264   267     3 
+  260   262   278   279     3 
+  260   262   278   280     3 
+  263   262   278   279     3 
+  263   262   278   280     3 
+  264   262   278   279     3 
+  264   262   278   280     3 
+  262   264   267   268     3 
+  262   264   267   276     3 
+  265   264   267   268     3 
+  265   264   267   276     3 
+  266   264   267   268     3 
+  266   264   267   276     3 
+  264   267   268   269     3    aromatic_prop_1
+  264   267   268   270     3    aromatic_prop_1
+  276   267   268   269     3    aromatic_prop_1
+  276   267   268   270     3    aromatic_prop_1
+  264   267   276   274     3    aromatic_prop_1
+  264   267   276   277     3    aromatic_prop_1
+  268   267   276   274     3    aromatic_prop_1
+  268   267   276   277     3    aromatic_prop_1
+  267   268   270   271     3    aromatic_prop_1
+  267   268   270   272     3    aromatic_prop_1
+  269   268   270   271     3    aromatic_prop_1
+  269   268   270   272     3    aromatic_prop_1
+  268   270   272   273     3    aromatic_prop_1
+  268   270   272   274     3    aromatic_prop_1
+  271   270   272   273     3    aromatic_prop_1
+  271   270   272   274     3    aromatic_prop_1
+  270   272   274   275     3    aromatic_prop_1
+  270   272   274   276     3    aromatic_prop_1
+  273   272   274   275     3    aromatic_prop_1
+  273   272   274   276     3    aromatic_prop_1
+  272   274   276   267     3    aromatic_prop_1
+  272   274   276   277     3    aromatic_prop_1
+  275   274   276   267     3    aromatic_prop_1
+  275   274   276   277     3    aromatic_prop_1
+  262   278   280   281     3    backbone_prop_1
+  262   278   280   282     3    backbone_prop_1
+  279   278   280   281     3    backbone_prop_2
+  279   278   280   282     3    backbone_prop_1
+  278   280   282   284     3    backbone_prop_3
+  278   280   282   288     3    backbone_prop_4
+  280   282   284   285     3 
+  280   282   284   286     3 
+  280   282   284   287     3 
+  283   282   284   285     3 
+  283   282   284   286     3 
+  283   282   284   287     3 
+  288   282   284   285     3 
+  288   282   284   286     3 
+  288   282   284   287     3 
+  280   282   288   289     3 
+  280   282   288   290     3 
+  283   282   288   289     3 
+  283   282   288   290     3 
+  284   282   288   289     3 
+  284   282   288   290     3 
+  282   288   290   291     3    backbone_prop_1
+  282   288   290   292     3    backbone_prop_1
+  289   288   290   291     3    backbone_prop_2
+  289   288   290   292     3    backbone_prop_1
+  288   290   292   294     3    backbone_prop_3
+  288   290   292   302     3    backbone_prop_4
+  290   292   294   295     3 
+  290   292   294   296     3 
+  290   292   294   297     3 
+  293   292   294   295     3 
+  293   292   294   296     3 
+  293   292   294   297     3 
+  302   292   294   295     3 
+  302   292   294   296     3 
+  302   292   294   297     3 
+  290   292   302   303     3 
+  290   292   302   304     3 
+  293   292   302   303     3 
+  293   292   302   304     3 
+  294   292   302   303     3 
+  294   292   302   304     3 
+  292   294   297   298     3 
+  292   294   297   299     3 
+  295   294   297   298     3 
+  295   294   297   299     3 
+  296   294   297   298     3 
+  296   294   297   299     3 
+  294   297   299   300     3    backbone_prop_1
+  294   297   299   301     3    backbone_prop_1
+  298   297   299   300     3    backbone_prop_2
+  298   297   299   301     3    backbone_prop_2
+  292   302   304   305     3    backbone_prop_1
+  292   302   304   306     3    backbone_prop_1
+  303   302   304   305     3    backbone_prop_2
+  303   302   304   306     3    backbone_prop_1
+  302   304   306   308     3    backbone_prop_3
+  302   304   306   321     3    backbone_prop_4
+  304   306   308   309     3 
+  304   306   308   310     3 
+  304   306   308   311     3 
+  307   306   308   309     3 
+  307   306   308   310     3 
+  307   306   308   311     3 
+  321   306   308   309     3 
+  321   306   308   310     3 
+  321   306   308   311     3 
+  304   306   321   322     3 
+  304   306   321   323     3 
+  307   306   321   322     3 
+  307   306   321   323     3 
+  308   306   321   322     3 
+  308   306   321   323     3 
+  306   308   311   312     3 
+  306   308   311   313     3 
+  306   308   311   317     3 
+  309   308   311   312     3 
+  309   308   311   313     3 
+  309   308   311   317     3 
+  310   308   311   312     3 
+  310   308   311   313     3 
+  310   308   311   317     3 
+  308   311   313   314     3 
+  308   311   313   315     3 
+  308   311   313   316     3 
+  312   311   313   314     3 
+  312   311   313   315     3 
+  312   311   313   316     3 
+  317   311   313   314     3 
+  317   311   313   315     3 
+  317   311   313   316     3 
+  308   311   317   318     3 
+  308   311   317   319     3 
+  308   311   317   320     3 
+  312   311   317   318     3 
+  312   311   317   319     3 
+  312   311   317   320     3 
+  313   311   317   318     3 
+  313   311   317   319     3 
+  313   311   317   320     3 
+  306   321   323   324     3    backbone_prop_1
+  306   321   323   333     3    backbone_prop_1
+  322   321   323   324     3    backbone_prop_1
+  322   321   323   333     3    backbone_prop_1
+  321   323   324   327     3    proline_prop_1
+  321   323   333   330     3    backbone_prop_3
+  321   323   333   334     3 
+  321   323   333   335     3    backbone_prop_4
+  324   323   333   330     3 
+  324   323   333   334     3 
+  324   323   333   335     3 
+  323   324   327   328     3 
+  323   324   327   329     3 
+  323   324   327   330     3 
+  325   324   327   328     3 
+  325   324   327   329     3 
+  325   324   327   330     3 
+  326   324   327   328     3 
+  326   324   327   329     3 
+  326   324   327   330     3 
+  324   327   330   331     3 
+  324   327   330   332     3 
+  324   327   330   333     3 
+  328   327   330   331     3 
+  328   327   330   332     3 
+  328   327   330   333     3 
+  329   327   330   331     3 
+  329   327   330   332     3 
+  329   327   330   333     3 
+  327   330   333   323     3 
+  327   330   333   334     3 
+  327   330   333   335     3 
+  331   330   333   323     3 
+  331   330   333   334     3 
+  331   330   333   335     3 
+  332   330   333   323     3 
+  332   330   333   334     3 
+  332   330   333   335     3 
+  323   333   335   336     3 
+  323   333   335   337     3 
+  330   333   335   336     3 
+  330   333   335   337     3 
+  334   333   335   336     3 
+  334   333   335   337     3 
+  333   335   337   338     3    backbone_prop_1
+  333   335   337   339     3    backbone_prop_1
+  336   335   337   338     3    backbone_prop_2
+  336   335   337   339     3    backbone_prop_1
+  335   337   339   341     3    backbone_prop_3
+  335   337   339   354     3    backbone_prop_4
+  337   339   341   342     3 
+  337   339   341   343     3 
+  337   339   341   344     3 
+  340   339   341   342     3 
+  340   339   341   343     3 
+  340   339   341   344     3 
+  354   339   341   342     3 
+  354   339   341   343     3 
+  354   339   341   344     3 
+  337   339   354   355     3 
+  337   339   354   356     3 
+  340   339   354   355     3 
+  340   339   354   356     3 
+  341   339   354   355     3 
+  341   339   354   356     3 
+  339   341   344   345     3 
+  339   341   344   346     3 
+  339   341   344   350     3 
+  342   341   344   345     3 
+  342   341   344   346     3 
+  342   341   344   350     3 
+  343   341   344   345     3 
+  343   341   344   346     3 
+  343   341   344   350     3 
+  341   344   346   347     3 
+  341   344   346   348     3 
+  341   344   346   349     3 
+  345   344   346   347     3 
+  345   344   346   348     3 
+  345   344   346   349     3 
+  350   344   346   347     3 
+  350   344   346   348     3 
+  350   344   346   349     3 
+  341   344   350   351     3 
+  341   344   350   352     3 
+  341   344   350   353     3 
+  345   344   350   351     3 
+  345   344   350   352     3 
+  345   344   350   353     3 
+  346   344   350   351     3 
+  346   344   350   352     3 
+  346   344   350   353     3 
+  339   354   356   357     3    backbone_prop_1
+  339   354   356   358     3    backbone_prop_1
+  355   354   356   357     3    backbone_prop_2
+  355   354   356   358     3    backbone_prop_1
+  354   356   358   360     3    backbone_prop_3
+  354   356   358   378     3    backbone_prop_4
+  356   358   360   361     3 
+  356   358   360   362     3 
+  356   358   360   363     3 
+  359   358   360   361     3 
+  359   358   360   362     3 
+  359   358   360   363     3 
+  378   358   360   361     3 
+  378   358   360   362     3 
+  378   358   360   363     3 
+  356   358   378   379     3 
+  356   358   378   380     3 
+  359   358   378   379     3 
+  359   358   378   380     3 
+  360   358   378   379     3 
+  360   358   378   380     3 
+  358   360   363   364     3 
+  358   360   363   377     3 
+  361   360   363   364     3 
+  361   360   363   377     3 
+  362   360   363   364     3 
+  362   360   363   377     3 
+  360   363   364   365     3    aromatic_prop_7
+  360   363   364   366     3    aromatic_prop_7
+  377   363   364   365     3    aromatic_prop_7
+  377   363   364   366     3    aromatic_prop_7
+  360   363   377   368     3    aromatic_prop_8
+  360   363   377   375     3    aromatic_prop_8
+  364   363   377   368     3    aromatic_prop_8
+  364   363   377   375     3    aromatic_prop_8
+  363   364   366   367     3    aromatic_prop_4
+  363   364   366   368     3    aromatic_prop_4
+  365   364   366   367     3    aromatic_prop_4
+  365   364   366   368     3    aromatic_prop_4
+  364   366   368   369     3    aromatic_prop_9
+  364   366   368   377     3    aromatic_prop_9
+  367   366   368   369     3    aromatic_prop_9
+  367   366   368   377     3    aromatic_prop_9
+  366   368   369   370     3    aromatic_prop_11
+  366   368   369   371     3    aromatic_prop_11
+  377   368   369   370     3 
+  377   368   369   371     3    aromatic_prop_11
+  366   368   377   363     3    aromatic_prop_10
+  366   368   377   375     3    aromatic_prop_10
+  369   368   377   363     3    aromatic_prop_10
+  369   368   377   375     3    aromatic_prop_10
+  368   369   371   372     3    aromatic_prop_1
+  368   369   371   373     3    aromatic_prop_1
+  370   369   371   372     3    aromatic_prop_1
+  370   369   371   373     3    aromatic_prop_1
+  369   371   373   374     3    aromatic_prop_1
+  369   371   373   375     3    aromatic_prop_1
+  372   371   373   374     3    aromatic_prop_1
+  372   371   373   375     3    aromatic_prop_1
+  371   373   375   376     3    aromatic_prop_1
+  371   373   375   377     3    aromatic_prop_1
+  374   373   375   376     3    aromatic_prop_1
+  374   373   375   377     3    aromatic_prop_1
+  373   375   377   363     3    aromatic_prop_12
+  373   375   377   368     3    aromatic_prop_12
+  376   375   377   363     3    aromatic_prop_12
+  376   375   377   368     3    aromatic_prop_12
+  358   378   380   381     3    backbone_prop_1
+  358   378   380   382     3    backbone_prop_1
+  379   378   380   381     3    backbone_prop_2
+  379   378   380   382     3    backbone_prop_1
+  378   380   382   384     3    backbone_prop_3
+  378   380   382   400     3    backbone_prop_4
+  380   382   384   385     3 
+  380   382   384   386     3 
+  380   382   384   387     3 
+  383   382   384   385     3 
+  383   382   384   386     3 
+  383   382   384   387     3 
+  400   382   384   385     3 
+  400   382   384   386     3 
+  400   382   384   387     3 
+  380   382   400   401     3 
+  380   382   400   402     3 
+  383   382   400   401     3 
+  383   382   400   402     3 
+  384   382   400   401     3 
+  384   382   400   402     3 
+  382   384   387   388     3 
+  382   384   387   389     3 
+  382   384   387   390     3 
+  385   384   387   388     3 
+  385   384   387   389     3 
+  385   384   387   390     3 
+  386   384   387   388     3 
+  386   384   387   389     3 
+  386   384   387   390     3 
+  384   387   390   391     3 
+  384   387   390   392     3 
+  384   387   390   393     3 
+  388   387   390   391     3 
+  388   387   390   392     3 
+  388   387   390   393     3 
+  389   387   390   391     3 
+  389   387   390   392     3 
+  389   387   390   393     3 
+  387   390   393   394     3 
+  387   390   393   395     3 
+  387   390   393   396     3 
+  391   390   393   394     3 
+  391   390   393   395     3 
+  391   390   393   396     3 
+  392   390   393   394     3 
+  392   390   393   395     3 
+  392   390   393   396     3 
+  390   393   396   397     3 
+  390   393   396   398     3 
+  390   393   396   399     3 
+  394   393   396   397     3 
+  394   393   396   398     3 
+  394   393   396   399     3 
+  395   393   396   397     3 
+  395   393   396   398     3 
+  395   393   396   399     3 
+  382   400   402   403     3    backbone_prop_1
+  382   400   402   404     3    backbone_prop_1
+  401   400   402   403     3    backbone_prop_2
+  401   400   402   404     3    backbone_prop_1
+  400   402   404   406     3    backbone_prop_3
+  400   402   404   417     3    backbone_prop_4
+  402   404   406   407     3 
+  402   404   406   408     3 
+  402   404   406   409     3 
+  405   404   406   407     3 
+  405   404   406   408     3 
+  405   404   406   409     3 
+  417   404   406   407     3 
+  417   404   406   408     3 
+  417   404   406   409     3 
+  402   404   417   418     3 
+  402   404   417   419     3 
+  405   404   417   418     3 
+  405   404   417   419     3 
+  406   404   417   418     3 
+  406   404   417   419     3 
+  404   406   409   410     3 
+  404   406   409   411     3 
+  404   406   409   412     3 
+  407   406   409   410     3 
+  407   406   409   411     3 
+  407   406   409   412     3 
+  408   406   409   410     3 
+  408   406   409   411     3 
+  408   406   409   412     3 
+  406   409   412   413     3 
+  406   409   412   414     3 
+  410   409   412   413     3 
+  410   409   412   414     3 
+  411   409   412   413     3 
+  411   409   412   414     3 
+  409   412   414   415     3    backbone_prop_1
+  409   412   414   416     3    backbone_prop_1
+  413   412   414   415     3    backbone_prop_2
+  413   412   414   416     3    backbone_prop_2
+  404   417   419   420     3    backbone_prop_1
+  404   417   419   421     3    backbone_prop_1
+  418   417   419   420     3    backbone_prop_2
+  418   417   419   421     3    backbone_prop_1
+  417   419   421   423     3    backbone_prop_3
+  417   419   421   434     3    backbone_prop_4
+  419   421   423   424     3 
+  419   421   423   425     3 
+  419   421   423   426     3 
+  422   421   423   424     3 
+  422   421   423   425     3 
+  422   421   423   426     3 
+  434   421   423   424     3 
+  434   421   423   425     3 
+  434   421   423   426     3 
+  419   421   434   435     3 
+  419   421   434   436     3 
+  422   421   434   435     3 
+  422   421   434   436     3 
+  423   421   434   435     3 
+  423   421   434   436     3 
+  421   423   426   427     3 
+  421   423   426   428     3 
+  421   423   426   429     3 
+  424   423   426   427     3 
+  424   423   426   428     3 
+  424   423   426   429     3 
+  425   423   426   427     3 
+  425   423   426   428     3 
+  425   423   426   429     3 
+  423   426   429   430     3 
+  423   426   429   431     3 
+  427   426   429   430     3 
+  427   426   429   431     3 
+  428   426   429   430     3 
+  428   426   429   431     3 
+  426   429   431   432     3    backbone_prop_1
+  426   429   431   433     3    backbone_prop_1
+  430   429   431   432     3    backbone_prop_2
+  430   429   431   433     3    backbone_prop_2
+  421   434   436   437     3    backbone_prop_1
+  421   434   436   438     3    backbone_prop_1
+  435   434   436   437     3    backbone_prop_2
+  435   434   436   438     3    backbone_prop_1
+  434   436   438   440     3    backbone_prop_3
+  434   436   438   448     3    backbone_prop_4
+  436   438   440   441     3 
+  436   438   440   442     3 
+  436   438   440   443     3 
+  439   438   440   441     3 
+  439   438   440   442     3 
+  439   438   440   443     3 
+  448   438   440   441     3 
+  448   438   440   442     3 
+  448   438   440   443     3 
+  436   438   448   449     3 
+  436   438   448   450     3 
+  439   438   448   449     3 
+  439   438   448   450     3 
+  440   438   448   449     3 
+  440   438   448   450     3 
+  438   440   443   444     3 
+  438   440   443   445     3 
+  441   440   443   444     3 
+  441   440   443   445     3 
+  442   440   443   444     3 
+  442   440   443   445     3 
+  440   443   445   446     3    backbone_prop_1
+  440   443   445   447     3    backbone_prop_1
+  444   443   445   446     3    backbone_prop_2
+  444   443   445   447     3    backbone_prop_2
+  438   448   450   451     3    backbone_prop_1
+  438   448   450   452     3    backbone_prop_1
+  449   448   450   451     3    backbone_prop_2
+  449   448   450   452     3    backbone_prop_1
+  448   450   452   454     3    backbone_prop_3
+  448   450   452   467     3    backbone_prop_4
+  450   452   454   455     3 
+  450   452   454   456     3 
+  450   452   454   457     3 
+  453   452   454   455     3 
+  453   452   454   456     3 
+  453   452   454   457     3 
+  467   452   454   455     3 
+  467   452   454   456     3 
+  467   452   454   457     3 
+  450   452   467   468     3 
+  450   452   467   469     3 
+  453   452   467   468     3 
+  453   452   467   469     3 
+  454   452   467   468     3 
+  454   452   467   469     3 
+  452   454   457   458     3 
+  452   454   457   459     3 
+  452   454   457   463     3 
+  455   454   457   458     3 
+  455   454   457   459     3 
+  455   454   457   463     3 
+  456   454   457   458     3 
+  456   454   457   459     3 
+  456   454   457   463     3 
+  454   457   459   460     3 
+  454   457   459   461     3 
+  454   457   459   462     3 
+  458   457   459   460     3 
+  458   457   459   461     3 
+  458   457   459   462     3 
+  463   457   459   460     3 
+  463   457   459   461     3 
+  463   457   459   462     3 
+  454   457   463   464     3 
+  454   457   463   465     3 
+  454   457   463   466     3 
+  458   457   463   464     3 
+  458   457   463   465     3 
+  458   457   463   466     3 
+  459   457   463   464     3 
+  459   457   463   465     3 
+  459   457   463   466     3 
+  452   467   469   470     3    backbone_prop_1
+  452   467   469   471     3    backbone_prop_1
+  468   467   469   470     3    backbone_prop_2
+  468   467   469   471     3    backbone_prop_1
+  467   469   471   473     3    backbone_prop_3
+  467   469   471   489     3    backbone_prop_4
+  469   471   473   474     3 
+  469   471   473   475     3 
+  469   471   473   476     3 
+  472   471   473   474     3 
+  472   471   473   475     3 
+  472   471   473   476     3 
+  489   471   473   474     3 
+  489   471   473   475     3 
+  489   471   473   476     3 
+  469   471   489   490     3 
+  469   471   489   491     3 
+  472   471   489   490     3 
+  472   471   489   491     3 
+  473   471   489   490     3 
+  473   471   489   491     3 
+  471   473   476   477     3 
+  471   473   476   478     3 
+  471   473   476   479     3 
+  474   473   476   477     3 
+  474   473   476   478     3 
+  474   473   476   479     3 
+  475   473   476   477     3 
+  475   473   476   478     3 
+  475   473   476   479     3 
+  473   476   479   480     3 
+  473   476   479   481     3 
+  473   476   479   482     3 
+  477   476   479   480     3 
+  477   476   479   481     3 
+  477   476   479   482     3 
+  478   476   479   480     3 
+  478   476   479   481     3 
+  478   476   479   482     3 
+  476   479   482   483     3 
+  476   479   482   484     3 
+  476   479   482   485     3 
+  480   479   482   483     3 
+  480   479   482   484     3 
+  480   479   482   485     3 
+  481   479   482   483     3 
+  481   479   482   484     3 
+  481   479   482   485     3 
+  479   482   485   486     3 
+  479   482   485   487     3 
+  479   482   485   488     3 
+  483   482   485   486     3 
+  483   482   485   487     3 
+  483   482   485   488     3 
+  484   482   485   486     3 
+  484   482   485   487     3 
+  484   482   485   488     3 
+  471   489   491   492     3    backbone_prop_1
+  471   489   491   493     3    backbone_prop_1
+  490   489   491   492     3    backbone_prop_2
+  490   489   491   493     3    backbone_prop_1
+  489   491   493   495     3    backbone_prop_3
+  489   491   493   511     3    backbone_prop_4
+  491   493   495   496     3 
+  491   493   495   497     3 
+  491   493   495   498     3 
+  494   493   495   496     3 
+  494   493   495   497     3 
+  494   493   495   498     3 
+  511   493   495   496     3 
+  511   493   495   497     3 
+  511   493   495   498     3 
+  491   493   511   512     3 
+  491   493   511   513     3 
+  494   493   511   512     3 
+  494   493   511   513     3 
+  495   493   511   512     3 
+  495   493   511   513     3 
+  493   495   498   499     3 
+  493   495   498   500     3 
+  493   495   498   501     3 
+  496   495   498   499     3 
+  496   495   498   500     3 
+  496   495   498   501     3 
+  497   495   498   499     3 
+  497   495   498   500     3 
+  497   495   498   501     3 
+  495   498   501   502     3 
+  495   498   501   503     3 
+  495   498   501   504     3 
+  499   498   501   502     3 
+  499   498   501   503     3 
+  499   498   501   504     3 
+  500   498   501   502     3 
+  500   498   501   503     3 
+  500   498   501   504     3 
+  498   501   504   505     3 
+  498   501   504   506     3 
+  498   501   504   507     3 
+  502   501   504   505     3 
+  502   501   504   506     3 
+  502   501   504   507     3 
+  503   501   504   505     3 
+  503   501   504   506     3 
+  503   501   504   507     3 
+  501   504   507   508     3 
+  501   504   507   509     3 
+  501   504   507   510     3 
+  505   504   507   508     3 
+  505   504   507   509     3 
+  505   504   507   510     3 
+  506   504   507   508     3 
+  506   504   507   509     3 
+  506   504   507   510     3 
+  493   511   513   514     3    backbone_prop_1
+  493   511   513   515     3    backbone_prop_1
+  512   511   513   514     3    backbone_prop_2
+  512   511   513   515     3    backbone_prop_1
+  511   513   515   517     3    backbone_prop_3
+  511   513   515   526     3    backbone_prop_4
+  513   515   517   518     3 
+  513   515   517   519     3 
+  513   515   517   520     3 
+  516   515   517   518     3 
+  516   515   517   519     3 
+  516   515   517   520     3 
+  526   515   517   518     3 
+  526   515   517   519     3 
+  526   515   517   520     3 
+  513   515   526   527     3 
+  513   515   526   528     3 
+  516   515   526   527     3 
+  516   515   526   528     3 
+  517   515   526   527     3 
+  517   515   526   528     3 
+  515   517   520   521     3 
+  515   517   520   522     3 
+  515   517   520   523     3 
+  518   517   520   521     3 
+  518   517   520   522     3 
+  518   517   520   523     3 
+  519   517   520   521     3 
+  519   517   520   522     3 
+  519   517   520   523     3 
+  517   520   523   524     3 
+  517   520   523   525     3 
+  521   520   523   524     3 
+  521   520   523   525     3 
+  522   520   523   524     3 
+  522   520   523   525     3 
+  515   526   528   529     3    backbone_prop_1
+  515   526   528   530     3    backbone_prop_1
+  527   526   528   529     3    backbone_prop_2
+  527   526   528   530     3    backbone_prop_1
+  526   528   530   532     3    backbone_prop_3
+  526   528   530   548     3    backbone_prop_4
+  528   530   532   533     3 
+  528   530   532   534     3 
+  528   530   532   535     3 
+  531   530   532   533     3 
+  531   530   532   534     3 
+  531   530   532   535     3 
+  548   530   532   533     3 
+  548   530   532   534     3 
+  548   530   532   535     3 
+  528   530   548   549     3 
+  528   530   548   550     3 
+  531   530   548   549     3 
+  531   530   548   550     3 
+  532   530   548   549     3 
+  532   530   548   550     3 
+  530   532   535   536     3 
+  530   532   535   537     3 
+  530   532   535   538     3 
+  533   532   535   536     3 
+  533   532   535   537     3 
+  533   532   535   538     3 
+  534   532   535   536     3 
+  534   532   535   537     3 
+  534   532   535   538     3 
+  532   535   538   539     3 
+  532   535   538   540     3 
+  532   535   538   541     3 
+  536   535   538   539     3 
+  536   535   538   540     3 
+  536   535   538   541     3 
+  537   535   538   539     3 
+  537   535   538   540     3 
+  537   535   538   541     3 
+  535   538   541   542     3 
+  535   538   541   543     3 
+  535   538   541   544     3 
+  539   538   541   542     3 
+  539   538   541   543     3 
+  539   538   541   544     3 
+  540   538   541   542     3 
+  540   538   541   543     3 
+  540   538   541   544     3 
+  538   541   544   545     3 
+  538   541   544   546     3 
+  538   541   544   547     3 
+  542   541   544   545     3 
+  542   541   544   546     3 
+  542   541   544   547     3 
+  543   541   544   545     3 
+  543   541   544   546     3 
+  543   541   544   547     3 
+  530   548   550   551     3    backbone_prop_1
+  530   548   550   552     3    backbone_prop_1
+  549   548   550   551     3    backbone_prop_2
+  549   548   550   552     3    backbone_prop_1
+  548   550   552   555     3    backbone_prop_4
+  550   552   555   556     3 
+  550   552   555   557     3 
+  553   552   555   556     3 
+  553   552   555   557     3 
+  554   552   555   556     3 
+  554   552   555   557     3 
+  552   555   557   558     3    backbone_prop_1
+  552   555   557   559     3    backbone_prop_1
+  556   555   557   558     3    backbone_prop_2
+  556   555   557   559     3    backbone_prop_1
+  555   557   559   561     3    backbone_prop_3
+  555   557   559   574     3    backbone_prop_4
+  557   559   561   562     3 
+  557   559   561   563     3 
+  557   559   561   564     3 
+  560   559   561   562     3 
+  560   559   561   563     3 
+  560   559   561   564     3 
+  574   559   561   562     3 
+  574   559   561   563     3 
+  574   559   561   564     3 
+  557   559   574   575     3 
+  557   559   574   576     3 
+  560   559   574   575     3 
+  560   559   574   576     3 
+  561   559   574   575     3 
+  561   559   574   576     3 
+  559   561   564   565     3 
+  559   561   564   566     3 
+  559   561   564   570     3 
+  562   561   564   565     3 
+  562   561   564   566     3 
+  562   561   564   570     3 
+  563   561   564   565     3 
+  563   561   564   566     3 
+  563   561   564   570     3 
+  561   564   566   567     3 
+  561   564   566   568     3 
+  561   564   566   569     3 
+  565   564   566   567     3 
+  565   564   566   568     3 
+  565   564   566   569     3 
+  570   564   566   567     3 
+  570   564   566   568     3 
+  570   564   566   569     3 
+  561   564   570   571     3 
+  561   564   570   572     3 
+  561   564   570   573     3 
+  565   564   570   571     3 
+  565   564   570   572     3 
+  565   564   570   573     3 
+  566   564   570   571     3 
+  566   564   570   572     3 
+  566   564   570   573     3 
+  559   574   576   577     3    backbone_prop_1
+  559   574   576   578     3    backbone_prop_1
+  575   574   576   577     3    backbone_prop_2
+  575   574   576   578     3    backbone_prop_1
+  574   576   578   580     3    backbone_prop_3
+  574   576   578   594     3    backbone_prop_4
+  576   578   580   581     3 
+  576   578   580   582     3 
+  576   578   580   583     3 
+  579   578   580   581     3 
+  579   578   580   582     3 
+  579   578   580   583     3 
+  594   578   580   581     3 
+  594   578   580   582     3 
+  594   578   580   583     3 
+  576   578   594   595     3 
+  576   578   594   596     3 
+  579   578   594   595     3 
+  579   578   594   596     3 
+  580   578   594   595     3 
+  580   578   594   596     3 
+  578   580   583   584     3 
+  578   580   583   592     3 
+  581   580   583   584     3 
+  581   580   583   592     3 
+  582   580   583   584     3 
+  582   580   583   592     3 
+  580   583   584   585     3    aromatic_prop_1
+  580   583   584   586     3    aromatic_prop_1
+  592   583   584   585     3    aromatic_prop_1
+  592   583   584   586     3    aromatic_prop_1
+  580   583   592   590     3    aromatic_prop_1
+  580   583   592   593     3    aromatic_prop_1
+  584   583   592   590     3    aromatic_prop_1
+  584   583   592   593     3    aromatic_prop_1
+  583   584   586   587     3    aromatic_prop_1
+  583   584   586   588     3    aromatic_prop_1
+  585   584   586   587     3    aromatic_prop_1
+  585   584   586   588     3    aromatic_prop_1
+  584   586   588   589     3    aromatic_prop_1
+  584   586   588   590     3    aromatic_prop_1
+  587   586   588   589     3    aromatic_prop_1
+  587   586   588   590     3    aromatic_prop_1
+  586   588   590   591     3    aromatic_prop_1
+  586   588   590   592     3    aromatic_prop_1
+  589   588   590   591     3    aromatic_prop_1
+  589   588   590   592     3    aromatic_prop_1
+  588   590   592   583     3    aromatic_prop_1
+  588   590   592   593     3    aromatic_prop_1
+  591   590   592   583     3    aromatic_prop_1
+  591   590   592   593     3    aromatic_prop_1
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3
+    5    20    18    19     1 
+   18    22    20    21     1 
+   22    39    37    38     1 
+   37    41    39    40     1 
+   41    50    48    49     1 
+   48    52    50    51     1 
+   52    62    60    61     1 
+   54    58    57    59     1 
+   60    64    62    63     1 
+   64    77    75    76     1 
+   69    73    72    74     1 
+   75    79    77    78     1 
+   79    89    87    88     1 
+   81    85    84    86     1 
+   87    91    89    90     1 
+   91   109   107   108     1 
+   93    96   105    97     1 
+   96    99    97    98     1 
+   96   103   105   106     1 
+   97   101    99   100     1 
+   99   103   101   102     1 
+  101   105   103   104     1 
+  107   111   109   110     1 
+  111   131   129   130     1 
+  129   133   131   132     1 
+  133   141   139   140     1 
+  139   143   141   142     1 
+  143   157   155   156     1 
+  155   159   157   158     1 
+  159   177   175   176     1 
+  161   164   173   165     1 
+  164   167   165   166     1 
+  164   171   173   174     1 
+  165   169   167   168     1 
+  167   171   169   170     1 
+  169   173   171   172     1 
+  175   179   177   178     1 
+  179   184   182   183     1 
+  182   186   184   185     1 
+  186   201   199   200     1 
+  199   203   201   202     1 
+  203   215   213   214     1 
+  213   217   215   216     1 
+  217   239   237   238     1 
+  225   230   228   229     1 
+  228   231   230   234     1 
+  230   232   231   233     1 
+  230   235   234   236     1 
+  237   241   239   240     1 
+  241   250   248   249     1 
+  248   252   250   251     1 
+  252   260   258   259     1 
+  258   262   260   261     1 
+  262   280   278   279     1 
+  264   267   276   268     1 
+  267   270   268   269     1 
+  267   274   276   277     1 
+  268   272   270   271     1 
+  270   274   272   273     1 
+  272   276   274   275     1 
+  278   282   280   281     1 
+  282   290   288   289     1 
+  288   292   290   291     1 
+  292   304   302   303     1 
+  294   299   297   298     1 
+  297   300   299   301     1 
+  302   306   304   305     1 
+  306   323   321   322     1 
+  321   324   323   333     1 
+  333   337   335   336     1 
+  335   339   337   338     1 
+  339   356   354   355     1 
+  354   358   356   357     1 
+  358   380   378   379     1 
+  360   363   377   364     1 
+  363   366   364   365     1 
+  364   368   366   367     1 
+  368   371   369   370     1 
+  369   373   371   372     1 
+  371   375   373   374     1 
+  373   377   375   376     1 
+  378   382   380   381     1 
+  382   402   400   401     1 
+  400   404   402   403     1 
+  404   419   417   418     1 
+  409   414   412   413     1 
+  412   415   414   416     1 
+  417   421   419   420     1 
+  421   436   434   435     1 
+  426   431   429   430     1 
+  429   432   431   433     1 
+  434   438   436   437     1 
+  438   450   448   449     1 
+  440   445   443   444     1 
+  443   446   445   447     1 
+  448   452   450   451     1 
+  452   469   467   468     1 
+  467   471   469   470     1 
+  471   491   489   490     1 
+  489   493   491   492     1 
+  493   513   511   512     1 
+  511   515   513   514     1 
+  515   528   526   527     1 
+  520   524   523   525     1 
+  526   530   528   529     1 
+  530   550   548   549     1 
+  548   552   550   551     1 
+  552   557   555   556     1 
+  555   559   557   558     1 
+  559   576   574   575     1 
+  574   578   576   577     1 
+  578   595   594   596     1 
+  580   583   592   584     1 
+  583   586   584   585     1 
+  583   590   592   593     1 
+  584   588   586   587     1 
+  586   590   588   589     1 
+  588   592   590   591     1 
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+; Include water topology
+#ifdef FLEX_SPC
+#include "flexspc.itp"
+#else
+#include "spc.itp"
+#endif
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+[ system ]
+; Name
+VILLIN HEADPEICE
+
+[ molecules ]
+; Compound        #mols
+Protein             1

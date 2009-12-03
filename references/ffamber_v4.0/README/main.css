@@ -1,0 +1,24 @@
+a{text-decoration:none}
+a:visited{color:#96C}
+a:link,a.named:visited,div.breadcrumb a:visited,div.sitelinks a:visited,div.footlinks a:visited{color:#594FBF}
+a:hover{text-decoration:underline}
+
+
+/* ___________________ GLOBAL ___________________ 
+
+A:link {
+	color: #0000AA;
+	text-decoration: none; font-weight:bold;
+}
+
+A:hover {
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+A:visited {
+	color: #663366;
+	text-decoration: none; font-weight:bold;
+}
+
+*/
