@@ -1,19 +1,9 @@
 {-# LANGUAGE
   EmptyDataDecls
   , FlexibleInstances
-  , FlexibleContexts
-  , UndecidableInstances
-  , RankNTypes
   #-}
 
-module Data.Biophys.Topology.Amber.Params.Types where
-
-data Default = Default { non_bonded_function_type :: Int
-                       , combination_rule         :: Int
-                       , generate_pairs           :: Bool
-                       , fudgeLJ                  :: Double
-                       , fudgeQQ                  :: Double
-                       } deriving (Eq, Ord, Show)
+module Data.Biophys.Topology.Amber.Types where
 
 
 -- | i.e. amber99_17 is H bonded to nitrogen atoms
@@ -49,17 +39,6 @@ instance TShow Epsilon where tshow (Epsilon e) = "Epsilon " ++ show e
 instance TShow Sigma   where tshow (Sigma s)   = "Sigma "   ++ show s
 -- -------------------- -------------------- --
 
-
--- -------------------- molecule definitions -------------------- --
-data Atoms = Atoms { atom_number              :: Integer
-                   , atom_type                :: AtomType
-                   , atom_resno               :: Int
-                   , atom_resname             :: ResidueName
-                   , atom_name                :: AtomName
-                   , atom_charge_group_number :: Int
-                   , atom_charge              :: Charge Electron
-                   , atom_mass                :: Mass AMU
-                   } deriving Show
 
 
 
