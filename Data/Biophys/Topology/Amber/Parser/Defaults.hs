@@ -1,4 +1,4 @@
-module Data.Biophys.Topology.Amber.Parser.Default where
+module Data.Biophys.Topology.Amber.Parser.Default (defaults) where
 
 import Data.Biophys.Topology.Amber.Types
 import Data.Biophys.Topology.Amber.Data.Defaults
@@ -23,7 +23,7 @@ defaults'' = do nbfunc   <- positiveInt                                         
                 genpairs <- gen_pairs `fmap` (try (string "yes") <|> string "no") ; spaces
                 fLJ      <- decimal                                               ; spaces
                 fQQ      <- decimal
-                space `manyTill` eol
+                space `manyTill` (try comment <|> eol)
 
                 return Defaults { non_bonded_function_type = nbfunc
                                 , combination_rule         = combrule
@@ -34,8 +34,5 @@ defaults'' = do nbfunc   <- positiveInt                                         
 
 defaults :: Parser Defaults
 defaults = do defaults'
+              try comment
               defaults''
-
-t = "[ defaults ]\n1               2               yes             0.5     0.8333\n"
-
-p = parse defaults [] t
