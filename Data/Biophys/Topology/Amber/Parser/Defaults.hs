@@ -1,4 +1,4 @@
-module Data.Biophys.Topology.Amber.Parser.Default (defaults) where
+module Data.Biophys.Topology.Amber.Parser.Defaults (defaults) where
 
 import Data.Biophys.Topology.Amber.Types
 import Data.Biophys.Topology.Amber.Data.Defaults

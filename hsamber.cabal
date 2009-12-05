@@ -7,13 +7,16 @@ license: BSD3
 author: Badi' Abdul-Wahid
 maintainer: abdulwahidc@gmail.com
 build-type: Simple
-cabal-version: >= 1.2
+cabal-version: >= 1.6
 
 
 Library
     build-depends:
           base   >= 4.0
+        , parsec >= 3.0
     exposed-modules:
         Data.Biophys.Topology.Amber.Types
         Data.Biophys.Topology.Amber.Data.Defaults
         Data.Biophys.Topology.Amber.Data.Atoms
+        Data.Biophys.Topology.Amber.Parser.Util
+        Data.Biophys.Topology.Amber.Parser.Defaults
