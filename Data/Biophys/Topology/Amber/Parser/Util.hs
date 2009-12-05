@@ -55,7 +55,6 @@ decimal = do
 -- | a comment starts with a semicolon and continues until the end of the line. For example
 -- > parse comment [] "; foo bar baz\n"
 --  returns 'Right ()'
-comment :: Parser ()
+comment :: Parser String
 comment = do char ';'
              anyChar `manyTill` eol
-             return ()
